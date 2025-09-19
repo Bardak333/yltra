@@ -499,12 +499,13 @@ a:visited {
 }
 
 .main {
-    padding-top: 60px ;
+    padding-top: 60px;
+    padding-bottom: 30px;
     display: flex;
     margin: 0 auto;
     max-width: 393px;
     position: relative;
-    overflow: hidden;
+    overflow:hidden;
     z-index: 1;
 }
 

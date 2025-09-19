@@ -11,14 +11,14 @@ function open_close__menu() {
     header__aplication.classList.toggle('header__aplication-open');
     header__wraper.classList.toggle('header__wraper-open');
     btn__openMenu.classList.toggle('header__menu-open');
-    // mobile__menu.classList.toggle('header__mobile__menu-open');
+    mobile__menu.classList.toggle('header__mobile__menu-open');
 
-    if (mobile__menu.style.display === 'flex') {
-        mobile__menu.style.display = 'none';
-    }
-    else {
-        mobile__menu.style.display = 'flex';
-    }
+    // if (mobile__menu.style.display === 'flex') {
+    //     mobile__menu.style.display = 'none';
+    // }
+    // else {
+    //     mobile__menu.style.display = 'flex';
+    // }
 
 }
 

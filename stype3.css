@@ -8,10 +8,9 @@
 
 .header {
     width: 100%;
+    position: fixed;
     background-color: #FFFFFF99;
     backdrop-filter: blur(16px);
-    position: fixed;
-
     transition: width 0.4s ease-in-out;
 }
 
@@ -19,7 +18,7 @@
     width: 283px;
     display: flex;
     flex-direction: column;
-    height: 100dvh;
+    height: 61px;
 }
 
 .header__wraper {
@@ -343,17 +342,19 @@
     justify-content: center;
     max-width: 283px;
     width: 100%;
+    position: fixed;
+    left: 0;
+    top: 60px;
     height: 100dvh;
-    z-index: -1000;
-
+    background-color: #FFFFFF99;
+    backdrop-filter: blur(16px);
     overflow: hidden;
     transform: translateX(-100%);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .header__mobile__menu-open {
     transform: translateX(0);
-    height: 100dvh;
 }
 
 

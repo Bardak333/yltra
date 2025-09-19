@@ -4,6 +4,7 @@ const header__aplication = document.querySelector('.header__application');
 const header = document.querySelector('.header');
 const container = document.querySelector('.container');
 const mobile__menu = document.querySelector('.header__mobile__menu');
+const body = document.querySelector('.scroll');
 
 function open_close__menu() {
     header.classList.toggle('header-open');
@@ -12,14 +13,7 @@ function open_close__menu() {
     header__wraper.classList.toggle('header__wraper-open');
     btn__openMenu.classList.toggle('header__menu-open');
     mobile__menu.classList.toggle('header__mobile__menu-open');
-
-    // if (mobile__menu.style.display === 'flex') {
-    //     mobile__menu.style.display = 'none';
-    // }
-    // else {
-    //     mobile__menu.style.display = 'flex';
-    // }
-
+    body.classList.toggle('scroll-off');
 }
 
 btn__openMenu.addEventListener('click', open_close__menu);

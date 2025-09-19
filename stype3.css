@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+.scroll-off {
+    overflow: hidden;
+}
+
 .header {
     width: 100%;
     position: fixed;
@@ -494,9 +498,292 @@ a:visited {
     height: 100%;
 }
 
+.main {
+    padding-top: 60px ;
+    display: flex;
+    margin: 0 auto;
+    max-width: 393px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
 
-.bg {
-    background-color: #abd8f1;
-    height: 2000px;
-    width: 100%;
+.bg__frame-1 {
+    background-image: url(images/bg-1.png);
+    background-repeat: no-repeat;
+    background-size: 1194px 1144px;
+    background-position: center center;
+}
+
+.main__widget-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+    z-index: 2;
+}
+
+.widget-1-text-1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #2D2D2D;
+    letter-spacing: -0.5px;
+    line-height: 100%;
+}
+
+.widget-1-text-1-bold {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #2D2D2D;
+    letter-spacing: -0.5px;
+    line-height: 100%;
+}
+
+.widget-1-text-2 {
+    padding: 16px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #747474;
+    letter-spacing: -0.5px;
+    line-height: 100%;
+}
+
+.main__widget-1--item-2 {
+    background-color: #F6F6F6;
+    border-radius: 16px;
+    max-width: 220px;
+}
+
+.main__widget-1--item-3 {
+    width: 56px;
+    height: 56px;
+    background-color: #F6F6F6;
+    border-radius: 16px;
+    background-image: url(images/icon-enter.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+}
+
+.main__item-1 {
+    padding-top: 30px;
+}
+
+.widget-2__fullname {
+    max-width: 118px;
+}
+
+.main__widget-2--item-1 {
+    padding: 12px 28px;
+    background-color: #99FFD3;
+    border-radius: 16px 16px 0 0 ;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.widget-2__profession {
+    max-width: 326px;
+}
+
+.widget-2__experience {
+    display: flex;
+    gap: 8px;
+    max-width: 137px;
+}
+
+.widget-2__experience--text-1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #747474;
+    line-height: 100%;
+}
+
+.main__widget-2--item-2 {
+    padding: 16px 28px;
+    background-color: #FFFFFF;
+    border-radius: 0 0 16px 0;
+}
+
+.main__widget-2 {
+    margin: 0 -16px;
+    max-width: 393px;
+    margin-top: 94px;
+    position: relative;
+    z-index: 3;
+}
+
+.main__widget-2__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.widget-2--item-2--text {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #2D2D2D;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+}
+
+.widget-2--item-2--comma {
+    width: 15px;
+    height: 11px;
+    background-image: url(images/zapatie.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.widget-2__experience--text-2 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #2D2D2D;
+    line-height: 100%;
+    letter-spacing: -1px;
+}
+
+.widget-2__profession-text {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #2D2D2D;
+    line-height: 100%;
+    color: #22833F;
+}
+
+.widget-2--lastname {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #2D2D2D;
+    letter-spacing: -0.5px;
+    line-height: 100%;
+}
+
+.widget-2--first-middlename {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #2D2D2D;
+    line-height: 100%;
+}
+
+.main__widget-3 {
+    padding: 16px 14px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 28px;
+    position: relative;
+    z-index: 4;
+}
+
+.main__widget-3__implant-icon {
+    background-image: url(images/tooth_icon1.png);
+    width: 36px;
+    height: 36px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main__widget-3__implant {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.main__widget-3__implant__container {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.main__widget-3__implant-text-1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #2D2D2D;
+    line-height: 100%;
+}
+
+.main__widget-3__implant-text-1--bold {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #2D2D2D;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+}
+
+.main__widget-3__implant-text-2 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #747474;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+}
+
+.main__widget-3__implant-text-2--bold {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #747474;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+}
+
+.main__widget-3--btn {
+    padding: 6px;
+    padding-left: 16px;
+    background-color: #CEE9F9;
+    border: none;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     position: relative;
+    z-index: 5;
+}
+
+.main__widget-3--btn-icon {
+    background-image: url(images/icon_btn-2.png);
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    position: relative;
+    z-index: 6;
+}
+
+.main__item-2 {
+    margin-top: 260px;
+}
+
+.main__doctor__icon {
+    background-image: url(images/nizami1.png);
+    width: 414px;
+    height: 518px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 61px;
+    right: -136px;
+    position: absolute;
+    z-index: 2;
 }

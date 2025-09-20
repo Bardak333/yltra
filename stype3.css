@@ -16,6 +16,7 @@
     background-color: #FFFFFF99;
     backdrop-filter: blur(16px);
     transition: width 0.4s ease-in-out;
+    z-index: 1000;
 }
 
 .header-open {
@@ -23,6 +24,7 @@
     display: flex;
     flex-direction: column;
     height: 63px;
+    z-index: 1000;
 }
 
 .header__wraper {
@@ -355,6 +357,7 @@
     overflow: hidden;
     transform: translateX(-100%);
     transition: all 0.4s ease-in-out;
+    z-index: 1000;
 }
 
 .header__mobile__menu-open {
@@ -503,7 +506,7 @@ a:visited {
     padding-bottom: 30px;
     display: flex;
     margin: 0 auto;
-    max-width: 393px;
+    
     position: relative;
     overflow:hidden;
     z-index: 1;
@@ -522,6 +525,7 @@ a:visited {
     gap: 32px;
     position: relative;
     z-index: 2;
+    margin-right: auto;
 }
 
 .widget-1-text-1 {
@@ -571,6 +575,9 @@ a:visited {
 
 .main__item-1 {
     padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .widget-2__fullname {
@@ -608,7 +615,7 @@ a:visited {
     padding: 16px 28px;
     background-color: #FFFFFF;
     border-radius: 0 0 16px 0;
-}
+} 
 
 .main__widget-2 {
     margin: 0 -16px;
@@ -616,7 +623,9 @@ a:visited {
     margin-top: 94px;
     position: relative;
     z-index: 3;
+    margin-left: auto;
 }
+
 
 .main__widget-2__container {
     display: flex;
@@ -686,6 +695,8 @@ a:visited {
     border-radius: 28px;
     position: relative;
     z-index: 4;
+    width: 361px;
+    margin-right: auto;
 }
 
 .main__widget-3__implant-icon {
@@ -773,6 +784,8 @@ a:visited {
 
 .main__item-2 {
     margin-top: 260px;
+    display: flex;
+    flex-direction: column;
 }
 
 .main__doctor__icon {
@@ -783,7 +796,7 @@ a:visited {
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    top: 61px;
+    top: 80px;
     right: -136px;
     position: absolute;
     z-index: 2;

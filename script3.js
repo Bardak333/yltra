@@ -5,6 +5,11 @@ const header = document.querySelector('.header');
 const container = document.querySelector('.container');
 const mobile__menu = document.querySelector('.header__mobile__menu');
 const body = document.querySelector('.scroll');
+const skull_img = document.querySelector(".skull_img");
+const shift_1 = document.querySelector(".shift_img-1");
+const shift_2 = document.querySelector(".shift_img-2");
+const shift_3 = document.querySelector(".shift_img-3");
+const shift_4 = document.querySelector(".shift_img-4");
 
 function open_close__menu() {
     header.classList.toggle('header-open');
@@ -16,4 +21,17 @@ function open_close__menu() {
     body.classList.toggle('scroll-off');
 }
 
+function skull_animation () {
+    if (window.scrollY > 200) {
+        skull_img.style.animation = "skull_down 0.7s ease-in-out forwards";
+        shift_2.style.animation = "shift-down 0.7s ease-in-out forwards 0.6s";
+        shift_4.style.animation = "shift-down 0.7s ease-in-out forwards 0.8s";
+        shift_1.style.animation = "shift-down 0.7s ease-in-out forwards 1s";
+        shift_3.style.animation = "shift-down 0.7s ease-in-out forwards 1.2s";
+        window.removeEventListener('scroll', skull_animation);
+    }
+}
+
+
 btn__openMenu.addEventListener('click', open_close__menu);
+window.addEventListener('scroll', skull_animation);

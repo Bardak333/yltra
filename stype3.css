@@ -1312,6 +1312,7 @@ a:visited {
     gap: 60px;
     padding: 30px 0;
     max-width: 393px;
+    transition: all 0.3s ease-in-out;
 }
 
 .aboutUs__widget-1 {
@@ -1335,12 +1336,7 @@ a:visited {
     background-size: cover;
     border-radius: 16px;
     background-color: #FFFFFF;
-}
-
-@media screen and (max-width: 393px) {  
-    .aboutUs__widget-1--prothesis {
-        background-position: center -20px;
-    }
+    min-width: 200px;
 }
 
 .aboutUs__widget-1--syringe {
@@ -1352,6 +1348,7 @@ a:visited {
     background-size: cover;
     border-radius: 16px;
     background-color: #FFFFFF;
+    min-width: 200px;
 }
 
 .aboutUs__widget-1--text {
@@ -1361,7 +1358,6 @@ a:visited {
     color: #2D2D2D;
     line-height: 100%;
     letter-spacing: -0.5px;
-    max-width: 141px;
 }
 
 .aboutUs__widget-1--text-bold {
@@ -1371,7 +1367,6 @@ a:visited {
     color: #2D2D2D;
     line-height: 100%;
     letter-spacing: -0.5px;
-    max-width: 141px;
 }
 
 .aboutUs__widget-1--btn {
@@ -1388,12 +1383,6 @@ a:visited {
     font-weight: 400;
     font-size: 14px;
     color: #2D2D2D;
-}
-
-@media screen and (max-width: 393px) {
-    .aboutUs__widget-1--btn {
-        padding: 10px 0;
-    }
 }
 
 .aboutUs__widget-1--btn-icon {

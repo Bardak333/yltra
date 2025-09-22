@@ -10,7 +10,7 @@ const shift_1 = document.querySelector(".shift_img-1");
 const shift_2 = document.querySelector(".shift_img-2");
 const shift_3 = document.querySelector(".shift_img-3");
 const shift_4 = document.querySelector(".shift_img-4");
-let anideted_skull_up = false;
+const window_width = document.documentElement.clientWidth;
 let animated_skull_down = false;
 
 function open_close__menu() {
@@ -31,30 +31,34 @@ function skull_animation_down () {
     shift_3.style.animation = "shift-down 0.5s ease-in-out forwards 1.2s";
 }
 
-function skull_animation_up () {
-    shift_2.style.animation = "shift-up 0.7s ease-in-out forwards";
-    shift_4.style.animation = "shift-up 0.7s ease-in-out forwards";
-    shift_1.style.animation = "shift-up 0.7s ease-in-out forwards";
-    shift_3.style.animation = "shift-up 0.7s ease-in-out forwards";
-    skull_img.style.animation = "skull_up 0.7s ease-in-out forwards";
+function skull_animation_jump () { 
+
+    shift_2.style.transform = 'translateY(0)';
+    shift_4.style.transform = 'translateY(0)';
+    shift_1.style.transform = 'translateY(0)';
+    shift_3.style.transform = 'translateY(0)';
+
+    shift_2.style.animation = "shift-jump 6s ease-in-out infinite 0.1s";
+    shift_4.style.animation = "shift-jump 6s ease-in-out infinite 0.2s";
+    shift_1.style.animation = "shift-jump 6s ease-in-out infinite 0.3s";
+    shift_3.style.animation = "shift-jump 6s ease-in-out infinite 0.4s";
 }
 
-function skull_amination() {
-    if (window.scrollY > 550 && !anideted_skull_up) {
-        skull_animation_up();
-        anideted_skull_up = true;
-        animated_skull_down = false;
-    } else if (window.scrollY > 200 && window.scrollY <= 500 && !animated_skull_down) {
+function skull_animation() {
+    if (window_width >= 1194 && !animated_skull_down) {
         skull_animation_down();
-        anideted_skull_down = true;
-        anideted_skull_up = false;
-    } else if (window.scrollY <= 200) {
-        anideted_skull_up = false;
-        animated_skull_down = false;
+        animated_skull_down = true;
+        setTimeout(skull_animation_jump, 2000);
+    }
+    else {
+        if (window.scrollY > 200 && !animated_skull_down) {
+            skull_animation_down();
+            anideted_skull_down = true;
+            setTimeout(skull_animation_jump, 2000);
+        }
     }
 }
 
-
 btn__openMenu.addEventListener('click', open_close__menu);
-window.addEventListener("scroll", skull_amination);
-skull_amination();
+window.addEventListener("scroll", skull_animation);
+skull_animation();

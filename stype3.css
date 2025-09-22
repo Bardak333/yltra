@@ -42,6 +42,11 @@
     gap: 22px;
 }
 
+@media screen and (max-width: 393px) {
+    .header__wraper {
+        gap: 6px;
+    }
+}
 
 @media screen and (min-width: 1194px) {
     .header__wraper {
@@ -70,13 +75,22 @@
     padding: 0 16px;
     margin: 0 auto;
     width: 100%;
+    max-width: 500px;
 
     transition: all 0.4s ease-in-out;
+}
+
+@media screen and (min-width: 1194px) {
+    .container {
+        padding: 0 16px;
+        max-width: 1500px;
+    }
 }
 
 @media screen and (min-width: 1920px) {
     .container {
         padding: 0 143px;
+        max-width: 2100px;
     }
 }
 
@@ -126,6 +140,12 @@
 .header__logo {
     width: 156px;
     display: flex;
+}
+
+@media screen and (max-width: 393px) {
+    .header__logo {
+        width: 120px;
+    }
 }
 
 @media screen and (min-width: 1194px) {
@@ -714,6 +734,8 @@ a:visited {
     display: flex;
     flex-direction: column;
     gap: 6px;
+    position: relative;
+    z-index: 3;
 }
 
 .widget-2__experience {
@@ -739,6 +761,9 @@ a:visited {
     padding: 16px 28px;
     background-color: #FFFFFF;
     border-radius: 0 0 16px 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
 } 
 
 .main__widget-2 {
@@ -1119,7 +1144,15 @@ a:visited {
     position: absolute;
     bottom: 0;
     z-index: 3;
-    left: -24px;
+    left: -30px;
+    bottom: 30px;
+}
+
+@media screen and (max-width: 393px) {
+    .skull_animated {
+        left: -50px;
+        top: 0;     
+    }
 }
 
 @media screen and (min-width: 1194px) {
@@ -1183,11 +1216,12 @@ a:visited {
     100% {transform: translateY(0);}
 }
 
-@keyframes shift-up {
-    0% {transform: translateY(0);}
-    40% {transform: translateY(-20px);}
-    60% {transform: translateY(0);}
-    100% {transform: translateY(-1500%);}
+@keyframes shift-jump {
+    0%, 90% {transform: translateY(0);}
+    93% {transform: translateY(10px);}
+    95% {transform: translateY(0);}
+    97% {transform: translateY(-5px);}
+    100% {transform: translateY(0);}
 }
 
 .shift_img-2 {
@@ -1197,7 +1231,6 @@ a:visited {
     left: 84px;
     top: 81px;
     transform: translateY(-1500%);
-    transition: all 0.5s ease-in-out;
 }
 
 .shift_img-3 {
@@ -1206,7 +1239,6 @@ a:visited {
     left: 193px;
     top: 73px;
     transform: translateY(-1500%);
-    transition: all 0.5s ease-in-out;
 }
 
 .shift_img-4 {
@@ -1216,7 +1248,6 @@ a:visited {
     right: 55px;
     top: 143px;
     transform: translateY(-1500%);
-    transition: all 0.5s ease-in-out;
 }
 
 .main__doctor__icon {
@@ -1227,18 +1258,26 @@ a:visited {
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    top: 80px;
-    right: -136px;
+    top: -367px;
+    right: -120px;
     position: absolute;
     z-index: 2;
+}
+
+@media screen and (max-width: 393px) {
+    .main__doctor__icon {
+        width: 350px;
+        height: 450px;
+        top: -360px;
+    }
 }
 
 @media screen and (min-width: 1194px) {
     .main__doctor__icon {
         width: 513px;
         height: 641px;
-        top: 160px;
-        right: 145px;
+        top: -32px;
+        right: 143px;
     }
 }
 
@@ -1246,7 +1285,7 @@ a:visited {
     .main__doctor__icon {
         width: 688px;
         height: 861px;
-        top: 140px;
-        right: 310px;
+        top: -80px;
+        right: 170px;
     }
 }

@@ -80,6 +80,18 @@
     transition: all 0.4s ease-in-out;
 }
 
+.container__aboutUs {
+    padding: 0 16px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    justify-items: center;
+
+    transition: all 0.4s ease-in-out;
+}
+
+
+
 @media screen and (min-width: 1194px) {
     .container {
         padding: 0 16px;
@@ -1299,6 +1311,7 @@ a:visited {
     flex-direction: column;
     gap: 60px;
     padding: 30px 0;
+    max-width: 393px;
 }
 
 .aboutUs__widget-1 {
@@ -1322,6 +1335,12 @@ a:visited {
     background-size: cover;
     border-radius: 16px;
     background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 393px) {  
+    .aboutUs__widget-1--prothesis {
+        background-position: center -20px;
+    }
 }
 
 .aboutUs__widget-1--syringe {
@@ -1360,8 +1379,8 @@ a:visited {
     border: none;
     gap: 16px;
     border-radius: 28px;
-    padding: 16px 88px;
-    padding-left: 96px;
+    padding: 16px 0;
+    justify-content: center;
     display: flex;
     align-items: center;
 
@@ -1369,6 +1388,12 @@ a:visited {
     font-weight: 400;
     font-size: 14px;
     color: #2D2D2D;
+}
+
+@media screen and (max-width: 393px) {
+    .aboutUs__widget-1--btn {
+        padding: 10px 0;
+    }
 }
 
 .aboutUs__widget-1--btn-icon {

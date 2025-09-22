@@ -24,11 +24,11 @@ function open_close__menu() {
 }
 
 function skull_animation_down () {
-    skull_img.style.animation = "skull_down 0.7s ease-in-out forwards";
-    shift_2.style.animation = "shift-down 0.5s ease-in-out forwards 0.6s";
-    shift_4.style.animation = "shift-down 0.5s ease-in-out forwards 0.8s";
-    shift_1.style.animation = "shift-down 0.5s ease-in-out forwards 1s";
-    shift_3.style.animation = "shift-down 0.5s ease-in-out forwards 1.2s";
+    skull_img.style.animation = "skull_down 0.5s ease-in-out forwards 0.5s";
+    shift_2.style.animation = "shift-down 0.5s ease-in-out forwards 1.2s";
+    shift_4.style.animation = "shift-down 0.5s ease-in-out forwards 1.4s";
+    shift_1.style.animation = "shift-down 0.5s ease-in-out forwards 1.6s";
+    shift_3.style.animation = "shift-down 0.5s ease-in-out forwards 1.8s";
 }
 
 function skull_animation_jump () { 
@@ -48,13 +48,13 @@ function skull_animation() {
     if (window_width >= 1194 && !animated_skull_down) {
         skull_animation_down();
         animated_skull_down = true;
-        setTimeout(skull_animation_jump, 2000);
+        setTimeout(skull_animation_jump, 3000);
     }
     else {
         if (window.scrollY > 200 && !animated_skull_down) {
             skull_animation_down();
             anideted_skull_down = true;
-            setTimeout(skull_animation_jump, 2000);
+            setTimeout(skull_animation_jump, 3000);
         }
     }
 }

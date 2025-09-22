@@ -12,6 +12,7 @@ const shift_3 = document.querySelector(".shift_img-3");
 const shift_4 = document.querySelector(".shift_img-4");
 const window_width = document.documentElement.clientWidth;
 let animated_skull_down = false;
+const aboutUs_btn = document.querySelector('.aboutUs__widget-1--btn');
 
 function open_close__menu() {
     header.classList.toggle('header-open');

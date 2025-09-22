@@ -80,18 +80,6 @@
     transition: all 0.4s ease-in-out;
 }
 
-.container__aboutUs {
-    padding: 0 16px;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 500px;
-    justify-items: center;
-
-    transition: all 0.4s ease-in-out;
-}
-
-
-
 @media screen and (min-width: 1194px) {
     .container {
         padding: 0 16px;
@@ -105,6 +93,29 @@
         max-width: 2100px;
     }
 }
+
+.container__aboutUs {
+    padding: 0 16px;
+    margin: 0 auto;
+    width: 100%;
+    justify-items: center;
+
+    transition: all 0.4s ease-in-out;
+}
+
+@media screen and (min-width: 1194px) {
+    .container__aboutUs {
+        max-width: 1500px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .container__aboutUs {
+        max-width: 2100px;
+        padding: 0 138px;
+    }
+}
+
 
 .container-open {
     padding: 0 32px;
@@ -1315,10 +1326,28 @@ a:visited {
     transition: all 0.3s ease-in-out;
 }
 
+@media screen and (min-width: 1194px) {
+    .aboutUs__content {
+        max-width: 1162px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .aboutUs__content {
+        max-width: 1634px;
+    }
+}
+
 .aboutUs__widget-1 {
     display: flex;
     flex-direction: column;
     gap: 32px;
+}
+
+@media screen and (min-width:1194px) {
+    .aboutUs__widget-1 {
+        flex-direction: row;
+    }
 }
 
 .aboutUs__widget-1--item {
@@ -1339,6 +1368,14 @@ a:visited {
     min-width: 200px;
 }
 
+@media screen and (min-width: 1920px) {
+    .aboutUs__widget-1--prothesis {
+        width: 257px;
+        height: 98px;
+        background-position: center -27px;
+    }
+}
+
 .aboutUs__widget-1--syringe {
     width: 200px;
     height: 80px;
@@ -1351,6 +1388,14 @@ a:visited {
     min-width: 200px;
 }
 
+@media screen and (min-width: 1920px) {
+    .aboutUs__widget-1--syringe {
+        width: 257px;
+        height: 98px;
+        background-position: center -20px;
+    }
+}
+
 .aboutUs__widget-1--text {
     font-family: "Work Sans", sans-serif;
     font-weight: 400;
@@ -1360,6 +1405,12 @@ a:visited {
     letter-spacing: -0.5px;
 }
 
+@media screen and (min-width: 1920px) {
+    .aboutUs__widget-1--text {
+        font-size: 16px;
+    }
+}
+
 .aboutUs__widget-1--text-bold {
     font-family: "Work Sans", sans-serif;
     font-weight: 700;
@@ -1367,6 +1418,12 @@ a:visited {
     color: #2D2D2D;
     line-height: 100%;
     letter-spacing: -0.5px;
+}
+
+@media screen and (min-width: 1920px) {
+    .aboutUs__widget-1--text-bold {
+        font-size: 16px;
+    }
 }
 
 .aboutUs__widget-1--btn {
@@ -1381,8 +1438,23 @@ a:visited {
 
     font-family: "Work Sans", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     color: #2D2D2D;
+}
+
+@media screen and (min-width: 1194px) {
+    .aboutUs__widget-1--btn {
+        max-width: 291px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .aboutUs__widget-1--btn {
+        max-width: 602px;
+        width: 100%;
+        font-size: 24px;
+    }
 }
 
 .aboutUs__widget-1--btn-icon {
@@ -1394,6 +1466,13 @@ a:visited {
     background-repeat: no-repeat;
     background-size: 24px;
     border-radius: 32px;
+}
+
+@media screen and (min-width: 1920px) {
+    .aboutUs__widget-1--btn-icon {
+        width: 56px;
+        height: 56px;
+    }
 }
 
 .aboutUs__widget-2 {
@@ -1413,11 +1492,32 @@ a:visited {
     text-align: center;
 }
 
+@media screen and (min-width: 1194px) {
+    .aboutUs__widget-2--item-1--text {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .aboutUs__widget-2--item-1--text {
+        font-size: 36px;
+    }
+}
+
+
 .aboutUs__widget-2--item-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4px;
+}
+
+@media screen and (min-width: 1194px) {
+    .aboutUs__widget-2--item-2 {
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+    }
 }
 
 .aboutUs__widget-2--item-2-btn-1 {
@@ -1439,6 +1539,18 @@ a:visited {
     transform: rotate(-3deg);
 }
 
+@media screen and (min-width: 1194px) {
+    .aboutUs__widget-2--item-2-btn-1 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .aboutUs__widget-2--item-2-btn-1 {
+        font-size: 36px;
+    }
+}
+
 .aboutUs__widget-2--item-2-btn-2 {
     background-color: #FFF;
     border: none;
@@ -1456,6 +1568,18 @@ a:visited {
     line-height: 100%;
     text-align: center;
     transform: rotate(2deg);
+}
+
+@media screen and (min-width: 1194px) {
+    .aboutUs__widget-2--item-2-btn-2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .aboutUs__widget-2--item-2-btn-2 {
+        font-size: 36px;
+    }
 }
 
 .aboutUs__widget-2--item-2-heart {
@@ -1483,11 +1607,32 @@ a:visited {
     gap: 20px;
 }
 
+@media screen and (min-width: 1194px) {
+    .aboutUs__widget-3 {
+        padding: 0 111px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 .aboutUs__widget-3--item {
     display: flex;
     flex-direction: column;
     gap: 24px;
     align-items: center;
+}
+
+@media screen and (min-width: 1194px) {
+    .aboutUs__widget-3--item {
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .aboutUs__widget-3--item {
+        max-width: 320px;
+    }
 }
 
 .aboutUs__widget-3--people {

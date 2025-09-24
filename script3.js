@@ -83,8 +83,8 @@ function next_case () {
         case_count++;
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
         case_counter_container.style.transform = 'translateX(-45px)';
-        case__items_translate -= 345;
-        case_items.style.transform = 'translateX(${case__items_translate}px)';
+        case__items_translate -= 346;
+        case_items.style.transform = `translateX(${case__items_translate}px)`;
         case_description_items_traanslate -= 360;
         case_description_items.style.transform = `translateX(${case_description_items_traanslate}px)`;
     }
@@ -164,9 +164,9 @@ function back_case () {
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
         case_count--;
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
+        case_counter_container.style.transform = 'translateX(0)';
         case__items_translate += 346;
         case_items.style.transform = `translateX(${case__items_translate}px)`;
-        case_counter_container.style.transform = 'translateX(0)';
         case_description_items_traanslate += 360;
         case_description_items.style.transform = `translateX(${case_description_items_traanslate}px)`;
     }

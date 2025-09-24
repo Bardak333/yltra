@@ -70,7 +70,7 @@ function skull_animation() {
 }
 
 function next_case () {
-    if (case_count >= 0 && case_count < 3) {
+    if (case_count >= 0 && case_count < 5) {
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
         case_count++;
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
@@ -78,42 +78,13 @@ function next_case () {
         case_items.style.transform = `translateX(${case__items_translate}px)`;
         case_description_items_traanslate -= 360;
         case_description_items.style.transform = `translateX(${case_description_items_traanslate}px)`;
+        case_counter_container_translate -= 80;
+        case_counter_container.style.transform = `translateX(${case_counter_container_translate}px)`;
     }
-    else if (case_count == 3) {
+    else if (case_count >= 5 && case_count < 7) {
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
         case_count++;
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case_counter_container.style.transform = 'translateX(-45px)';
-        case__items_translate -= 346;
-        case_items.style.transform = `translateX(${case__items_translate}px)`;
-        case_description_items_traanslate -= 360;
-        case_description_items.style.transform = `translateX(${case_description_items_traanslate}px)`;
-    }
-    else if (case_count == 4) {
-        case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case_count++;
-        case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case_counter_container.style.transform = 'translateX(-125px)';
-        case__items_translate -= 346;
-        case_items.style.transform = `translateX(${case__items_translate}px)`;
-        case_description_items_traanslate -= 360;
-        case_description_items.style.transform = `translateX(${case_description_items_traanslate}px)`;
-    }
-    else if (case_count == 5) {
-        case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case_count++;
-        case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case_counter_container.style.transform = 'translateX(-205px)';
-        case__items_translate -= 346;
-        case_items.style.transform = `translateX(${case__items_translate}px)`;
-        case_description_items_traanslate -= 360;
-        case_description_items.style.transform = `translateX(${case_description_items_traanslate}px)`;
-    }
-    else if (case_count == 6) {
-        case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case_count++;
-        case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case_counter_container.style.transform = 'translateX(-285px)';
         case__items_translate -= 346;
         case_items.style.transform = `translateX(${case__items_translate}px)`;
         case_description_items_traanslate -= 360;
@@ -122,7 +93,7 @@ function next_case () {
 }
 
 function back_case () {
-    if (case_count <= 7 && case_count > 4) {
+    if (case_count <= 7 && case_count > 5) {
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
         case_count--;
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
@@ -131,45 +102,16 @@ function back_case () {
         case_description_items_traanslate += 360;
         case_description_items.style.transform = `translateX(${case_description_items_traanslate}px)`;
     }
-    else if (case_count == 4) {
+    else if (case_count <= 5 && case_count >= 1) {
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
         case_count--;
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case_counter_container.style.transform = 'translateX(-245px)';
         case__items_translate += 346;
         case_items.style.transform = `translateX(${case__items_translate}px)`;
         case_description_items_traanslate += 360;
         case_description_items.style.transform = `translateX(${case_description_items_traanslate}px)`;
-    }
-    else if (case_count == 3) {
-        case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case_count--;
-        case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case_counter_container.style.transform = 'translateX(-165px)';
-        case__items_translate += 346;
-        case_items.style.transform = `translateX(${case__items_translate}px)`;
-        case_description_items_traanslate += 360;
-        case_description_items.style.transform = `translateX(${case_description_items_traanslate}px)`;
-    }
-    else if (case_count == 2) {
-        case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case_count--;
-        case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case_counter_container.style.transform = 'translateX(-80px)';
-        case__items_translate += 346;
-        case_items.style.transform = `translateX(${case__items_translate}px)`;
-        case_description_items_traanslate += 360;
-        case_description_items.style.transform = `translateX(${case_description_items_traanslate}px)`;
-    }
-    else if (case_count == 1) {
-        case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case_count--;
-        case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case_counter_container.style.transform = 'translateX(0)';
-        case__items_translate += 346;
-        case_items.style.transform = `translateX(${case__items_translate}px)`;
-        case_description_items_traanslate += 360;
-        case_description_items.style.transform = `translateX(${case_description_items_traanslate}px)`;
+        case_counter_container_translate += 80;
+        case_counter_container.style.transform = `translateX(${case_counter_container_translate}px)`;
     }
 }
 

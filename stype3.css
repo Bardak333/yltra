@@ -1725,6 +1725,7 @@ a:visited {
     flex-direction: column;
     gap: 32px;
     max-width: 360px;
+    overflow: hidden;
 }
 
 .ourWorks__header {
@@ -1740,8 +1741,9 @@ a:visited {
 .case__counter {
     padding: 15px 5px;
     padding-left: 15px;
-    overflow: hidden;
     white-space: nowrap;
+
+    transition: all 0.5s ease-in-out;
 }
 
 .case__counter-btn {
@@ -1756,14 +1758,21 @@ a:visited {
     line-height: 18px;
     letter-spacing: -2%;
     color: #2D2D2D;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.case__counter-btn_active {
+    background-color: #5CC2FF;
+    color: #FFFFFF;
 }
 
 .case__items {
     display: flex;
     gap: 16px;
     padding: 15px;
-    overflow: hidden;
     white-space: nowrap;
+    transition: all 0.5s ease-in-out;
 }
 
 .case__items--item {
@@ -1829,7 +1838,7 @@ a:visited {
 
 .case__description__items {
     display: flex;
-    overflow: hidden;
+    transition: all 0.5s ease-in-out;
 }
 
 .case__disctiption--item {

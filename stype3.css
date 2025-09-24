@@ -1778,15 +1778,15 @@ a:visited {
 
 .case__items--item {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 16px;
 }
 
 .case__images--img-1 {
-    /* width: 157px; */
-    /* height: 254px; */
-    width: 330px;
-    height: 157px;
+    width: 157px;
+    height: 254px;
+    /* width: 330px; */
+    /* height: 157px; */
     background-image: url(images/caseImg-1-1.jpg);
     background-position: center center;
     background-size: cover;
@@ -1796,10 +1796,10 @@ a:visited {
 }
 
 .case__images--img-2 {
-    /* width: 157px; */
-    /* height: 254px; */
-    width: 330px;
-    height: 157px;
+    width: 157px;
+    height: 254px;
+    /* width: 330px;
+    height: 157px; */
     background-image: url(images/caseImg-1-2.jpg);
     background-position: center center;
     background-size: cover;

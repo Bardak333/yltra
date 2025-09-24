@@ -16,6 +16,7 @@ const case__scroller_btn_back = document.querySelector(".case__scroller-btn_back
 const case__scroller_btn_next = document.querySelector(".case__scroller-btn_next");
 const case_counter_btn = document.querySelectorAll('.case__counter-btn');
 const case_counter_container = document.querySelector('.case__counter');
+let case_counter_container_translate = 0;
 const case_items = document.querySelector('.case__items');
 let case__items_translate = 0;
 const case_description_items = document.querySelector('.case__description__items');
@@ -154,7 +155,7 @@ function back_case () {
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
         case_count--;
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case_counter_container.style.transform = 'translateX(-90px)';
+        case_counter_container.style.transform = 'translateX(-80px)';
         case__items_translate += 346;
         case_items.style.transform = `translateX(${case__items_translate}px)`;
         case_description_items_traanslate += 360;

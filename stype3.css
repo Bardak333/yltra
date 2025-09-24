@@ -1778,12 +1778,15 @@ a:visited {
 
 .case__items--item {
     display: flex;
+    flex-direction: column;
     gap: 16px;
 }
 
 .case__images--img-1 {
-    width: 157px;
-    height: 254px;
+    /* width: 157px; */
+    /* height: 254px; */
+    width: 330px;
+    height: 157px;
     background-image: url(images/caseImg-1-1.jpg);
     background-position: center center;
     background-size: cover;
@@ -1793,8 +1796,10 @@ a:visited {
 }
 
 .case__images--img-2 {
-    width: 157px;
-    height: 254px;
+    /* width: 157px; */
+    /* height: 254px; */
+    width: 330px;
+    height: 157px;
     background-image: url(images/caseImg-1-2.jpg);
     background-position: center center;
     background-size: cover;
@@ -1827,7 +1832,7 @@ a:visited {
     border-radius: 15px;
     position: absolute;
     bottom: 10px;
-    left: 7px;
+    right: 10px;
 
     font-family: "Work Sans", sans-serif;
     font-weight: 500;
@@ -1944,6 +1949,19 @@ a:visited {
     transform: rotate(180deg);
 }
 
+.case__scroller-btn_back:hover {
+    .case__scroller-btn-icon {
+        background-color: #CEE9F9;
+    }
+}
+
+.case__scroller-btn_back:active {
+    .case__scroller-btn-icon {
+        background-color: #5CC2FF;
+        background-image: url(images/icon_btn_active.png);
+    }
+}
+
 .case__scroller-btn_next {
     padding: 8px;
     padding-left: 16px;
@@ -1955,6 +1973,19 @@ a:visited {
     border-radius: 28px;
 }
 
+.case__scroller-btn_next:hover {
+    .case__scroller-btn-icon {
+        background-color: #CEE9F9;
+    }
+}
+
+.case__scroller-btn_next:active {
+    .case__scroller-btn-icon {
+        background-color: #5CC2FF;
+        background-image: url(images/icon_btn_active.png);
+    }
+}
+
 .case__scroller-btn-icon {
     width: 42px;
     height: 30px;
@@ -1964,4 +1995,5 @@ a:visited {
     background-repeat: no-repeat;
     border-radius: 16px;
     background-size: 18px;
+    transition: all 0.5s ease-in-out;
 }

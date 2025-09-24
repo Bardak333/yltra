@@ -78,7 +78,7 @@ function next_case () {
         case_items.style.transform = `translateX(${case__items_translate}px)`;
         case_description_items_traanslate -= 360;
         case_description_items.style.transform = `translateX(${case_description_items_traanslate}px)`;
-        case_counter_container_translate -= 80;
+        case_counter_container_translate -= 81;
         case_counter_container.style.transform = `translateX(${case_counter_container_translate}px)`;
     }
     else if (case_count >= 5 && case_count < 7) {
@@ -110,7 +110,7 @@ function back_case () {
         case_items.style.transform = `translateX(${case__items_translate}px)`;
         case_description_items_traanslate += 360;
         case_description_items.style.transform = `translateX(${case_description_items_traanslate}px)`;
-        case_counter_container_translate += 80;
+        case_counter_container_translate += 81;
         case_counter_container.style.transform = `translateX(${case_counter_container_translate}px)`;
     }
 }

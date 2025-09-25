@@ -12,16 +12,6 @@ const shift_3 = document.querySelector(".shift_img-3");
 const shift_4 = document.querySelector(".shift_img-4");
 const window_width = document.documentElement.clientWidth;
 let animated_skull_down = false;
-const case__scroller_btn_back = document.querySelector(".case__scroller-btn_back");
-const case__scroller_btn_next = document.querySelector(".case__scroller-btn_next");
-const case_counter_btn = document.querySelectorAll('.case__counter-btn');
-const case_counter_container = document.querySelector('.case__counter');
-let case_counter_container_translate = 0;
-const case_items = document.querySelector('.case__items');
-let case__items_translate = 0;
-const case_description_items = document.querySelector('.case__description__items');
-case_description_items_traanslate = 0;
-let case_count = 0;
 
 function open_close__menu() {
     header.classList.toggle('header-open');
@@ -69,51 +59,55 @@ function skull_animation() {
     }
 }
 
+const case_counter_container = document.querySelector('.case__counter');
+const case_description_items = document.querySelector('.case__description__items');
+const case_items = document.querySelector('.case__items');
+const case_counter_btn = document.querySelectorAll('.case__counter-btn');
+let case_count = 0;
+const case__scroller_btn_back = document.querySelector(".case__scroller-btn_back");
+const case__scroller_btn_next = document.querySelector(".case__scroller-btn_next");
+
 function next_case () {
-    if (case_count >= 0 && case_count < 5) {
+    if (case_count >= 0 && case_count < 7) {
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
         case_count++;
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case__items_translate -= 346;
-        case_items.style.transform = `translateX(${case__items_translate}px)`;
-        case_description_items_traanslate -= 360;
-        case_description_items.style.transform = `translateX(${case_description_items_traanslate}px)`;
-        case_counter_container_translate -= 81;
-        case_counter_container.style.transform = `translateX(${case_counter_container_translate}px)`;
-    }
-    else if (case_count >= 5 && case_count < 7) {
-        case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case_count++;
-        case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case__items_translate -= 346;
-        case_items.style.transform = `translateX(${case__items_translate}px)`;
-        case_description_items_traanslate -= 360;
-        case_description_items.style.transform = `translateX(${case_description_items_traanslate}px)`;
+        case_items.style.transform = `translateX(${case_count * -100}%)`;
+        case_description_items.style.transform = `translateX(${case_count * -100}%)`;
+        case_counter_container.style.transform = `translateX(${case_count * -12}%)`;
     }
 }
 
 function back_case () {
-    if (case_count <= 7 && case_count > 5) {
+    if (case_count <= 7 && case_count >= 1) {
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
         case_count--;
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case__items_translate += 346;
-        case_items.style.transform = `translateX(${case__items_translate}px)`;
-        case_description_items_traanslate += 360;
-        case_description_items.style.transform = `translateX(${case_description_items_traanslate}px)`;
-    }
-    else if (case_count <= 5 && case_count >= 1) {
-        case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case_count--;
-        case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case__items_translate += 346;
-        case_items.style.transform = `translateX(${case__items_translate}px)`;
-        case_description_items_traanslate += 360;
-        case_description_items.style.transform = `translateX(${case_description_items_traanslate}px)`;
-        case_counter_container_translate += 81;
-        case_counter_container.style.transform = `translateX(${case_counter_container_translate}px)`;
+        case_items.style.transform = `translateX(${case_count * -100}%)`;
+        case_description_items.style.transform = `translateX(${case_count * -100}%)`;
+        case_counter_container.style.transform = `translateX(${case_count * -12}%)`;
     }
 }
+
+function view_case (count) {
+    case_items.style.transform = `translateX(${count * -100}%)`;
+    case_description_items.style.transform = `translateX(${count * -100}%)`;
+    case_counter_container.style.transform = `translateX(${count * -12}%)`;
+    case_count = count;
+}
+
+case_counter_btn.forEach ((btn, index) => {
+    btn.addEventListener("click", () => {
+        case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
+        case_counter_btn[index].classList.toggle('case__counter-btn_active');
+        case_items.style.transform = `translateX(${index * -100}%)`;
+        case_description_items.style.transform = `translateX(${index * -100}%)`;
+        case_counter_container.style.transform = `translateX(${index * -12}%)`;
+        case_count = index;
+    })
+});
+
+
 
 
 btn__openMenu.addEventListener('click', open_close__menu);

@@ -93,29 +93,6 @@
     }
 }
 
-.container__aboutUs {
-    padding: 0 16px;
-    margin: 0 auto;
-    justify-items: center;
-    max-width: 393px;
-
-    transition: all 0.4s ease-in-out;
-}
-
-@media screen and (min-width: 1194px) {
-    .container__aboutUs {
-        max-width: 1500px;
-    }
-}
-
-@media screen and (min-width: 1920px) {
-    .container__aboutUs {
-        max-width: 2100px;
-        padding: 0 138px;
-    }
-}
-
-
 .container-open {
     padding: 0 32px;
     
@@ -720,8 +697,6 @@ a:visited {
 .main__widget-1--item-3 {
     width: 56px;
     height: 56px;
-    background-color: #F6F6F6;
-    border-radius: 16px;
     background-image: url(images/icon-enter.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -731,7 +706,6 @@ a:visited {
 .main__item-1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-top: 90px;
 }
 
@@ -788,13 +762,11 @@ a:visited {
     z-index: 3;
 } 
 
-.main__widget-2 {
+.main__widget-2 { 
     margin: 0 -16px;
-    max-width: 393px;
     margin-top: 94px;
     position: relative;
     z-index: 3;
-    margin-left: auto;
     box-shadow: 0px 8px 16px 0px #00000026;
     border-radius: 16px 16px 16px 0;
 }
@@ -911,7 +883,7 @@ a:visited {
     border-radius: 28px;
     position: relative;
     z-index: 4;
-    max-width: 361px;
+    align-items: center;
     width: 100%;
     margin-right: auto;
     box-shadow: 0px 8px 16px 0px #48262626;
@@ -1060,11 +1032,13 @@ a:visited {
     padding: 6px 72px;
     padding-left: 80px;
     gap: 16px;
+    width: 100%;
     background-color: #CEE9F9;
     border: none;
     border-radius: 28px;
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
     z-index: 5;
     transition: all 0.2s ease-in-out;
@@ -1281,7 +1255,7 @@ a:visited {
     z-index: 2;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 392px) {
     .main__doctor__icon {
         width: 350px;
         height: 450px;
@@ -1316,7 +1290,6 @@ a:visited {
     flex-direction: column;
     gap: 60px;
     padding: 30px 0;
-    max-width: 393px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1724,6 +1697,7 @@ a:visited {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    margin: 0 auto;
     max-width: 360px;
     overflow: hidden;
 }
@@ -1739,10 +1713,10 @@ a:visited {
 }
 
 .case__counter {
-    padding: 15px 5px;
+    padding: 15px 15px;
     white-space: nowrap;
     display: flex;
-    gap: 6px;
+    gap: 4px;
 
     transition: all 0.5s ease-in-out;
 }
@@ -1770,23 +1744,20 @@ a:visited {
 
 .case__items {
     display: flex;
-    gap: 16px;
-    padding: 15px;
     white-space: nowrap;
     transition: all 0.5s ease-in-out;
 }
 
 .case__items--item {
     display: flex;
-    /* flex-direction: column; */
     gap: 16px;
+    padding: 15px;
 }
+
 
 .case__images--img-1 {
     width: 157px;
     height: 254px;
-    /* width: 330px; */
-    /* height: 157px; */
     background-image: url(images/caseImg-1-1.jpg);
     background-position: center center;
     background-size: cover;
@@ -1798,8 +1769,6 @@ a:visited {
 .case__images--img-2 {
     width: 157px;
     height: 254px;
-    /* width: 330px;
-    height: 157px; */
     background-image: url(images/caseImg-1-2.jpg);
     background-position: center center;
     background-size: cover;

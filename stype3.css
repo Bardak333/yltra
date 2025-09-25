@@ -612,7 +612,7 @@ a:visited {
 
 .widget-1-text-1 {
     font-family: "Work Sans", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 22px;
     color: #2D2D2D;
     letter-spacing: -0.5px;
@@ -633,7 +633,7 @@ a:visited {
 
 .widget-1-text-1-bold {
     font-family: "Work Sans", sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 22px;
     color: #2D2D2D;
     letter-spacing: -0.5px;
@@ -655,7 +655,7 @@ a:visited {
 .widget-1-text-2 {
     padding: 16px;
     font-family: "Work Sans", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     color: #747474;
     letter-spacing: -0.5px;
@@ -1029,7 +1029,7 @@ a:visited {
 }
 
 .main__widget-3--btn {
-    padding: 6px 72px;
+    padding: 10px 72px;
     padding-left: 80px;
     gap: 16px;
     width: 100%;
@@ -1046,7 +1046,7 @@ a:visited {
     
     font-family: "Work Sans", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     color: #2D2D2D;
     line-height: 18px;
     letter-spacing: -2%;
@@ -1407,7 +1407,7 @@ a:visited {
 
     font-family: "Work Sans", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     color: #2D2D2D;
 }
 
@@ -1453,7 +1453,7 @@ a:visited {
 
 .aboutUs__widget-2--item-1--text {
     font-family: "Work Sans", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 22px;
     color: #2D2D2D;
     letter-spacing: -0.5px;
@@ -1499,7 +1499,7 @@ a:visited {
     align-items: center;
 
     font-family: "Work Sans", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 22px;
     color: #2D2D2D;
     letter-spacing: -0.5px;
@@ -1530,7 +1530,7 @@ a:visited {
     align-items: center;
 
     font-family: "Work Sans", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 22px;
     color: #2D2D2D;
     letter-spacing: -0.5px;
@@ -1738,6 +1738,8 @@ a:visited {
     color: #2D2D2D;
 
     transition: all 0.5s ease-in-out;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; 
 }
 
 .case__counter-btn_active {
@@ -1919,6 +1921,8 @@ a:visited {
     background-color: #F6F6F699;
     border-radius: 28px;
     transform: rotate(180deg);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; 
 }
 
 .case__scroller-btn_back:hover {
@@ -1943,6 +1947,8 @@ a:visited {
     align-items: center;
     background-color: #F6F6F699;
     border-radius: 28px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; 
 }
 
 .case__scroller-btn_next:hover {
@@ -1980,6 +1986,8 @@ a:visited {
     top: 168px;
     z-index: 1000;
     opacity: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; 
 }
 
 .case__slider-next_btn {
@@ -1993,4 +2001,6 @@ a:visited {
     top: 168px;
     z-index: 1000;
     opacity: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; 
 }

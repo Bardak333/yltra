@@ -1700,6 +1700,7 @@ a:visited {
     margin: 0 auto;
     max-width: 360px;
     overflow: hidden;
+    position: relative;
 }
 
 .ourWorks__header {
@@ -1965,4 +1966,29 @@ a:visited {
     border-radius: 16px;
     background-size: 18px;
     transition: all 0.5s ease-in-out;
+}
+
+.case__slider-back_btn {
+    width: 150px;
+    height: 640px;
+    background-color: #22833f00;
+    border: solid 2px black; 
+    position: absolute;
+    left: 0;
+    top: 168px;
+    z-index: 1000;
+    opacity: 0;
+}
+
+.case__slider-next_btn {
+    width: 150px;
+    height: 640px;
+    background-color: #22833f00;
+    border: solid 2px black;
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    top: 168px;
+    z-index: 1000;
+    opacity: 0;
 }

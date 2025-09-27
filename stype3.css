@@ -1289,6 +1289,7 @@ a:visited {
     display: flex;
     flex-direction: column;
     gap: 60px;
+    margin: 0 auto;
     padding: 30px 0;
     transition: all 0.3s ease-in-out;
 }
@@ -1721,6 +1722,12 @@ a:visited {
     color: #2D2D2D;
 }
 
+@media screen and (min-width: 1920px) {
+    .ourWorks__header {
+        font-size: 36px;
+    }
+}
+
 .case__counter {
     padding: 15px 15px;
     white-space: nowrap;
@@ -2029,11 +2036,35 @@ a:visited {
 
 .case__slider-back_btn {
     width: 150px;
-    height: 640px;
+    height: 650px;
     background-color: #22833f00;
     border: solid 2px black; 
     position: absolute;
     left: 0;
+    top: 168px;
+    z-index: 1000;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; 
+}
+
+@media screen and (min-width: 1194px) {
+    .case__slider-back_btn {
+        height: 280px;
+        width: 400px;
+    }
+}
+
+.case__slider-next_btn {
+    width: 150px;
+    height: 650px;
+    background-color: #22833f00;
+    border: solid 2px black;
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
     top: 168px;
     z-index: 1000;
     opacity: 0;
@@ -2041,19 +2072,11 @@ a:visited {
     -webkit-tap-highlight-color: transparent; 
 }
 
-.case__slider-next_btn {
-    width: 150px;
-    height: 640px;
-    background-color: #22833f00;
-    border: solid 2px black;
-    margin-left: auto;
-    position: absolute;
-    right: 0;
-    top: 168px;
-    z-index: 1000;
-    opacity: 0;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-tap-highlight-color: transparent; 
+@media screen and (min-width: 1194px) {
+    .case__slider-next_btn {
+        height: 280px;
+        width: 400px;
+    }
 }
 
 @media screen and (min-width: 1194px) {

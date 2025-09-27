@@ -10,7 +10,7 @@ const shift_1 = document.querySelector(".shift_img-1");
 const shift_2 = document.querySelector(".shift_img-2");
 const shift_3 = document.querySelector(".shift_img-3");
 const shift_4 = document.querySelector(".shift_img-4");
-const window_width = document.documentElement.clientWidth;
+let window_width = document.documentElement.clientWidth;
 let animated_skull_down = false;
 
 function open_close__menu() {
@@ -77,7 +77,13 @@ function next_case () {
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
         case_items.style.transform = `translateX(${case_count * -100}%)`;
         case_description_items.style.transform = `translateX(${case_count * -100}%)`;
-        case_counter_container.style.transform = `translateX(${case_count * -12}%)`;
+        window_width = document.documentElement.clientWidth;
+        if (window_width >= 1194) {
+            case_counter_container.style.transform = `translateX(${case_count * -3}%)`;
+        }
+        else {
+            case_counter_container.style.transform = `translateX(${case_count * -12}%)`;
+        }
     }
 }
 
@@ -88,14 +94,26 @@ function back_case () {
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
         case_items.style.transform = `translateX(${case_count * -100}%)`;
         case_description_items.style.transform = `translateX(${case_count * -100}%)`;
-        case_counter_container.style.transform = `translateX(${case_count * -12}%)`;
+        window_width = document.documentElement.clientWidth;
+        if (window_width >= 1194) {
+            case_counter_container.style.transform = `translateX(${case_count * -3}%)`;
+        }
+        else {
+            case_counter_container.style.transform = `translateX(${case_count * -12}%)`;
+        }
     }
 }
 
 function view_case (count) {
     case_items.style.transform = `translateX(${count * -100}%)`;
     case_description_items.style.transform = `translateX(${count * -100}%)`;
-    case_counter_container.style.transform = `translateX(${count * -12}%)`;
+    window_width = document.documentElement.clientWidth;
+    if (window_width >= 1194) {
+        case_counter_container.style.transform = `translateX(${count * -3}%)`;
+    }
+    else {
+        case_counter_container.style.transform = `translateX(${count * -12}%)`;
+    }
     case_count = count;
 }
 
@@ -105,7 +123,13 @@ case_counter_btn.forEach ((btn, index) => {
         case_counter_btn[index].classList.toggle('case__counter-btn_active');
         case_items.style.transform = `translateX(${index * -100}%)`;
         case_description_items.style.transform = `translateX(${index * -100}%)`;
-        case_counter_container.style.transform = `translateX(${index * -12}%)`;
+        window_width = document.documentElement.clientWidth;
+        if (window_width >= 1194) {
+            case_counter_container.style.transform = `translateX(${index * -3}%)`;
+        }
+        else {
+            case_counter_container.style.transform = `translateX(${index * -12}%)`;
+        }
         case_count = index;
     })
 });

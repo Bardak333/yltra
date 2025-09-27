@@ -1705,6 +1705,12 @@ a:visited {
     position: relative;
 }
 
+@media screen and (min-width: 1194px) {
+    .ourWorks__content {
+        max-width: 1162px;
+    }
+}
+
 .ourWorks__header {
     font-family: "Work Sans", sans-serif;
     font-weight: 500;
@@ -1759,6 +1765,11 @@ a:visited {
     padding: 15px;
 }
 
+@media screen and (min-width: 1994px) {
+    .case__items--item {
+        flex-direction: column;
+    }
+}
 
 .case__images--img-1 {
     width: 157px;
@@ -1771,6 +1782,13 @@ a:visited {
     position: relative;
 }
 
+@media screen and (min-width: 1194px) {
+    .case__images--img-1 {
+        width: 337px;
+        height: 264px;
+    }
+}
+
 .case__images--img-2 {
     width: 157px;
     height: 254px;
@@ -1780,6 +1798,13 @@ a:visited {
     background-repeat: no-repeat;
     border-radius: 20px;
     position: relative;
+}
+
+@media screen and (min-width: 1194px) {
+    .case__images--img-2 {
+        width: 337px;
+        height: 264px;
+    }
 }
 
 .case__image-before {
@@ -1821,11 +1846,24 @@ a:visited {
     transition: all 0.5s ease-in-out;
 }
 
+@media screen and (min-width: 1194px) {
+    .case__description__items {
+        max-width: 426px;
+    }
+}
+
 .case__disctiption--item {
     padding: 15px;
     display: flex;
     flex-direction: column;
     min-width: 361px;   
+    gap: 16px;
+}
+
+@media screen and (min-width: 1194px) {
+    .case__disctiption--item {
+        min-width: 426px;
+    }
 }
 
 .case__description--header {
@@ -1900,6 +1938,12 @@ a:visited {
     color: #FFF;
 }
 
+@media screen and (min-width: 1194px) {
+    .case__description--result-text {
+        font-size: 18px;
+    }
+}
+
 .case__description--result-text_bold {
     font-family: "Work Sans", sans-serif;
     font-weight: 700;
@@ -1907,6 +1951,13 @@ a:visited {
     line-height: 100%;
     letter-spacing: 0%;
     color: #FFF;
+}
+
+@media screen and (min-width: 1194px) {
+    .case__description--result-text_bold {
+        font-size: 18px;
+        
+    }
 }
 
 .case__scroller {
@@ -2003,4 +2054,28 @@ a:visited {
     opacity: 0;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent; 
+}
+
+@media screen and (min-width: 1194px) {
+    .case__container {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+}
+
+@media screen and (min-width: 1194px) {
+    .case__container--item-1 {
+        overflow: hidden;
+        max-width: 720px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+}
+
+@media screen and (min-width: 1194px) {
+    .case__container--item-2 {
+        overflow: hidden;
+    }
 }

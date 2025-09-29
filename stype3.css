@@ -2057,7 +2057,7 @@ a:visited {
     position: absolute;
     left: 0;
     top: 168px;
-    z-index: 1000;
+    z-index: 999;
     cursor: pointer;
     opacity: 0;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -2081,7 +2081,7 @@ a:visited {
     right: 0;
     cursor: pointer;
     top: 168px;
-    z-index: 1000;
+    z-index: 999;
     opacity: 0;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent; 
@@ -2124,10 +2124,11 @@ a:visited {
 
 .diplomas__content {
     padding-top: 60px;
-    padding-bottom: 489px;
+    padding-bottom: 338px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    overflow: hidden;
 }
 
 .diplomas__header {
@@ -2143,7 +2144,7 @@ a:visited {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    
+    max-width: 500px;
 }
 
 .diplomas__container--items {
@@ -2166,6 +2167,11 @@ a:visited {
 }
 
 .diplomas__nav {
+    display: flex;
+    gap: 16px;
+}
+
+.diplomas__nav__container {
     display: flex;
     gap: 16px;
     margin: 0 auto;
@@ -2220,4 +2226,34 @@ a:visited {
         background-color: #5CC2FF;
         background-image: url(images/icon_btn_active.png);
     }
+}
+
+.diplomas__widget {
+    background-color: #99FFD3;
+    padding: 12px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 278px;
+    border-radius: 16px;
+}
+
+.diplomas__widget__container {
+    max-width: 465px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.diplomas__nizami {
+    position: absolute;
+    width: 288px;
+    height: 419px;
+    background-image: url(images/nizami1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    right: -20px;
+    top: 0px;
 }

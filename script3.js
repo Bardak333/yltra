@@ -71,7 +71,7 @@ const case__slider_back_btn = document.querySelector('.case__slider-back_btn');
 const case__slider_next_btn = document.querySelector('.case__slider-next_btn');
 
 function next_case () {
-    if (case_count >= 0 && case_count < 7) {
+    if (case_count >= 0 && case_count < case_counter_btn.length - 1) {
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
         case_count++;
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
@@ -88,7 +88,7 @@ function next_case () {
 }
 
 function back_case () {
-    if (case_count <= 7 && case_count >= 1) {
+    if (case_count <= case_counter_btn.length - 1 && case_count >= 1) {
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
         case_count--;
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
@@ -133,6 +133,16 @@ case_counter_btn.forEach ((btn, index) => {
         case_count = index;
     })
 });
+
+
+const diplomas_items = document.querySelectorAll('.diplomas__container--item');
+const diplomas_btn_next = document.querySelector('.diplomas__nav-btn_next');
+const diplomas_btn_back = document.querySelector('.diplomas__nav-btn_back');
+const diplomas_container = document.querySelector('.diplomas__container--items');
+let diplomas_count = 0;
+
+
+
 
 
 btn__openMenu.addEventListener('click', open_close__menu);

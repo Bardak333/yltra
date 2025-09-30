@@ -141,13 +141,12 @@ const diplomas_btn_back = document.querySelector('.diplomas__nav-btn_back');
 let diplomas_count = 0;
 
 function next_diplom() {
-    let diplomas_container = document.querySelector('.diplomas__container');
+    const diplomas_container = document.querySelector('.diplomas__container');
     const containerRect = diplomas_container.getBoundingClientRect();
     
     for (let i = 0; i < diplomas_items.length; i++) {
         const rect = diplomas_items[i].getBoundingClientRect();
         
-        // Правильная проверка: элемент за правым краем КОНТЕЙНЕРА
         if (rect.left > containerRect.right || i === diplomas_items.length - 1) {
             diplomas_items[i].scrollIntoView({ behavior: 'smooth', inline: 'end'});
             diplomas_count = i;
@@ -157,13 +156,12 @@ function next_diplom() {
 }
 
 function back_diplom() {
-    let diplomas_container = document.querySelector('.diplomas__container');
+    const diplomas_container = document.querySelector('.diplomas__container');
     const containerRect = diplomas_container.getBoundingClientRect();
     
     for (let i = diplomas_items.length - 1; i >= 0; i--) {
         const rect = diplomas_items[i].getBoundingClientRect();
         
-        // Правильная проверка: элемент за левым краем КОНТЕЙНЕРА
         if (rect.right < containerRect.left || i === 0) {
             diplomas_items[i].scrollIntoView({ behavior: 'smooth', inline: 'start'});
             diplomas_count = i;

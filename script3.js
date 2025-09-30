@@ -140,27 +140,31 @@ const diplomas_btn_next = document.querySelector('.diplomas__nav-btn_next');
 const diplomas_btn_back = document.querySelector('.diplomas__nav-btn_back');
 let diplomas_count = 0;
 
-function next_diplom () {
+function next_diplom() {
     let diplomas_container = document.querySelector('.diplomas__container');
+    const containerRect = diplomas_container.getBoundingClientRect();
+    
     for (let i = 0; i < diplomas_items.length; i++) {
         const rect = diplomas_items[i].getBoundingClientRect();
         
-        // Простая проверка: элемент за правым краем экрана
-        if (rect.left > diplomas_container.clientWidth || i === diplomas_items.length - 1) {
+        // Правильная проверка: элемент за правым краем КОНТЕЙНЕРА
+        if (rect.left > containerRect.right || i === diplomas_items.length - 1) {
             diplomas_items[i].scrollIntoView({ behavior: 'smooth', inline: 'end'});
             diplomas_count = i;
-            return; // Выходим из функции
+            return;
         }
     }
 }
 
-function back_diplom () {
+function back_diplom() {
     let diplomas_container = document.querySelector('.diplomas__container');
+    const containerRect = diplomas_container.getBoundingClientRect();
+    
     for (let i = diplomas_items.length - 1; i >= 0; i--) {
         const rect = diplomas_items[i].getBoundingClientRect();
         
-        // Если элемент за левым краем ИЛИ это первый элемент
-        if (rect.right < 0 || i === 0) {
+        // Правильная проверка: элемент за левым краем КОНТЕЙНЕРА
+        if (rect.right < containerRect.left || i === 0) {
             diplomas_items[i].scrollIntoView({ behavior: 'smooth', inline: 'start'});
             diplomas_count = i;
             return;

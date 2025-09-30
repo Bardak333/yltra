@@ -23,6 +23,8 @@ function open_close__menu() {
     body.classList.toggle('scroll-off');
 }
 
+btn__openMenu.addEventListener('click', open_close__menu);
+
 function skull_animation_down () {
     skull_img.style.animation = "skull_down 0.5s ease-in-out forwards 0.5s";
     shift_2.style.animation = "shift-down 0.5s ease-in-out forwards 1.2s";
@@ -87,6 +89,9 @@ function next_case () {
     }
 }
 
+case__scroller_btn_next.addEventListener('click', next_case);
+case__slider_next_btn.addEventListener('click', next_case);
+
 function back_case () {
     if (case_count <= case_counter_btn.length - 1 && case_count >= 1) {
         case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
@@ -104,6 +109,9 @@ function back_case () {
     }
 }
 
+case__scroller_btn_back.addEventListener('click', back_case);
+case__slider_back_btn.addEventListener('click', back_case);
+ 
 function view_case (count) {
     case_items.style.transform = `translateX(${count * -100}%)`;
     case_description_items.style.transform = `translateX(${count * -100}%)`;
@@ -155,6 +163,8 @@ function next_diplom() {
     }
 }
 
+diplomas_btn_next.addEventListener('click', next_diplom);
+
 function back_diplom() {
     const diplomas_container = document.querySelector('.diplomas__container');
     const containerRect = diplomas_container.getBoundingClientRect();
@@ -170,14 +180,39 @@ function back_diplom() {
     }
 }
 
-
-
 diplomas_btn_back.addEventListener('click', back_diplom);
-diplomas_btn_next.addEventListener('click', next_diplom);
-btn__openMenu.addEventListener('click', open_close__menu);
+
+case_counter_btn.forEach ((btn, index) => {
+    btn.addEventListener("click", () => {
+        case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
+        case_counter_btn[index].classList.toggle('case__counter-btn_active');
+        case_items.style.transform = `translateX(${index * -100}%)`;
+        case_description_items.style.transform = `translateX(${index * -100}%)`;
+        window_width = document.documentElement.clientWidth;
+        if (window_width >= 1194) {
+            case_counter_container.style.transform = `translateX(${index * -3}%)`;
+        }
+        else {
+            case_counter_container.style.transform = `translateX(${index * -12}%)`;
+        }
+        case_count = index;
+    })
+});
+
+const questions_btn = document.querySelectorAll('.question--btn');
+const questions_answers = document.querySelectorAll('.question--item-2');
+const questions_items = document.querySelectorAll('.questions__container--item');
+
+questions_btn.forEach ((btn, index) => {
+    btn.addEventListener('click', () => {
+        questions_btn[index].classList.toggle('question--btn_active');
+        questions_answers[index].classList.toggle('question--item-2_visible');
+        questions_items[index].classList.toggle('questions__container--item_active');
+    })
+});
+
+
+
 window.addEventListener("scroll", skull_animation);
 skull_animation();
-case__scroller_btn_next.addEventListener('click', next_case);
-case__scroller_btn_back.addEventListener('click', back_case);
-case__slider_back_btn.addEventListener('click', back_case);
-case__slider_next_btn.addEventListener('click', next_case); 
+

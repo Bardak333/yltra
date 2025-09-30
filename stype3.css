@@ -2438,11 +2438,11 @@ a:visited {
     margin: auto 0;
     margin-left: auto;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .question--btn_active {
     background-color: #5CC2FF;
-    border: none;
     background-image: url(images/arrow_up.png);
     background-position: center center;
 }

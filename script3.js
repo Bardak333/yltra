@@ -148,7 +148,7 @@ function next_diplom() {
         const rect = diplomas_items[i].getBoundingClientRect();
         
         if (rect.left > containerRect.right || i === diplomas_items.length - 1) {
-            diplomas_items[i].scrollIntoView({ behavior: 'smooth', inline: 'end'});
+            diplomas_items[i].scrollIntoView({ behavior: 'smooth', inline: 'end', block: 'nearest'});
             diplomas_count = i;
             return;
         }
@@ -163,7 +163,7 @@ function back_diplom() {
         const rect = diplomas_items[i].getBoundingClientRect();
         
         if (rect.right < containerRect.left || i === 0) {
-            diplomas_items[i].scrollIntoView({ behavior: 'smooth', inline: 'start'});
+            diplomas_items[i].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest'});
             diplomas_count = i;
             return;
         }

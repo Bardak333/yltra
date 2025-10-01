@@ -2447,4 +2447,92 @@ a:visited {
     background-position: center center;
 }
 
+.reviews {
+    background-image: url(images/bg-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reviews__content {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.rewiews__evaluations {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.rewiews__evalutions--item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+.rewiews--logo {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.rewiews--logo-pro_doctorov {
+    height: 48px;
+}
+
+.rewiews--logo-32top {
+    height: 22px;
+    margin: 12px 0;
+}
+
+.rewiews--logo-flamp {
+    height: 32px;
+    margin: 7px 0;
+    border-radius: 6px;
+}
+
+.rewiews--logo-gmaps {
+    height: 34px;
+    margin: 6px 0;
+}
+
+.rewiews--logo-yandex,
+.rewiews--logo-2gis {
+    height: 32px;
+    margin: 7px 0;
+}
+
+.rewiews--evalution {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.rewiews--evalution-star {
+    height: 24px;
+}
+
+.rewiews--evalution-text {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.reviews__header {
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: -0.5%;
+
+}
+
 

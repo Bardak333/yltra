@@ -2439,6 +2439,8 @@ a:visited {
     margin-left: auto;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; 
 }
 
 .question--btn_active {
@@ -2523,6 +2525,7 @@ a:visited {
     font-style: Bold;
     font-size: 20px;
     vertical-align: middle;
+    margin-right: 16px;
 }
 
 .reviews__header {

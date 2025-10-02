@@ -5,13 +5,6 @@ const header = document.querySelector('.header');
 const container = document.querySelector('.container');
 const mobile__menu = document.querySelector('.header__mobile__menu');
 const body = document.querySelector('.scroll');
-const skull_img = document.querySelector(".skull_img");
-const shift_1 = document.querySelector(".shift_img-1");
-const shift_2 = document.querySelector(".shift_img-2");
-const shift_3 = document.querySelector(".shift_img-3");
-const shift_4 = document.querySelector(".shift_img-4");
-let window_width = document.documentElement.clientWidth;
-let animated_skull_down = false;
 
 function open_close__menu() {
     header.classList.toggle('header-open');
@@ -24,6 +17,16 @@ function open_close__menu() {
 }
 
 btn__openMenu.addEventListener('click', open_close__menu);
+
+// --------------------------------------------------------skull-amination--------------------------------------------------------------------------- \\
+
+const skull_img = document.querySelector(".skull_img");
+const shift_1 = document.querySelector(".shift_img-1");
+const shift_2 = document.querySelector(".shift_img-2");
+const shift_3 = document.querySelector(".shift_img-3");
+const shift_4 = document.querySelector(".shift_img-4");
+let animated_skull_down = false;
+let window_width = document.documentElement.clientWidth;
 
 function skull_animation_down () {
     skull_img.style.animation = "skull_down 0.5s ease-in-out forwards 0.5s";
@@ -46,6 +49,7 @@ function skull_animation_jump () {
     shift_3.style.animation = "shift-jump 6s ease-in-out infinite 0.4s";
 }
 
+
 function skull_animation() {
     if (window_width >= 1194 && !animated_skull_down) {
         skull_animation_down();
@@ -60,6 +64,11 @@ function skull_animation() {
         }
     }
 }
+
+window.addEventListener("scroll", skull_animation);
+skull_animation();
+
+// --------------------------------------------------------case-scroll--------------------------------------------------------------------------- \\
 
 const case_counter_container = document.querySelector('.case__counter');
 const case_description_items = document.querySelector('.case__description__items');
@@ -142,6 +151,7 @@ case_counter_btn.forEach ((btn, index) => {
     })
 });
 
+// --------------------------------------------------------diplomas-csroll--------------------------------------------------------------------------- \\
 
 const diplomas_items = document.querySelectorAll('.diplomas__container--item');
 const diplomas_btn_next = document.querySelector('.diplomas__nav-btn_next');
@@ -182,22 +192,7 @@ function back_diplom() {
 
 diplomas_btn_back.addEventListener('click', back_diplom);
 
-case_counter_btn.forEach ((btn, index) => {
-    btn.addEventListener("click", () => {
-        case_counter_btn[case_count].classList.toggle('case__counter-btn_active');
-        case_counter_btn[index].classList.toggle('case__counter-btn_active');
-        case_items.style.transform = `translateX(${index * -100}%)`;
-        case_description_items.style.transform = `translateX(${index * -100}%)`;
-        window_width = document.documentElement.clientWidth;
-        if (window_width >= 1194) {
-            case_counter_container.style.transform = `translateX(${index * -3}%)`;
-        }
-        else {
-            case_counter_container.style.transform = `translateX(${index * -12}%)`;
-        }
-        case_count = index;
-    })
-});
+// --------------------------------------------------------questions-btn--------------------------------------------------------------------------- \\
 
 const questions_btn = document.querySelectorAll('.question--btn');
 const questions_answers = document.querySelectorAll('.question--item-2');
@@ -211,8 +206,43 @@ questions_btn.forEach ((btn, index) => {
     })
 });
 
+// --------------------------------------------------------rewiews-scroll--------------------------------------------------------------------------- \\
 
+const rewiews__items = document.querySelectorAll('.rewiews__item');
+const rewiews_btn_next = document.querySelector('.rewiews__nav-btn_next');
+const rewiews_btn_back = document.querySelector('.rewiews__nav-btn_back');
+let rewiews_count = 0;
 
-window.addEventListener("scroll", skull_animation);
-skull_animation();
+function next_rewiew() {
+    const rewiews_container = document.querySelector('.rewiews__items');
+    const containerRect = rewiews_container.getBoundingClientRect();
+    
+    for (let i = 0; i < rewiews__items.length; i++) {
+        const rect = rewiews__items[i].getBoundingClientRect();
+        
+        if (rect.left > containerRect.right - 200 || i === rewiews__items.length - 1) {
+            rewiews__items[i].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest'});
+            rewiews_count = i;
+            return;
+        }
+    }
+}
 
+rewiews_btn_next.addEventListener('click', next_rewiew);
+
+function back_rewiew() {
+    const rewiews_container = document.querySelector('.rewiews__items');
+    const containerRect = rewiews_container.getBoundingClientRect();
+    
+    for (let i = rewiews__items.length - 1; i >= 0; i--) {
+        const rect = rewiews__items[i].getBoundingClientRect();
+        
+        if (rect.left < containerRect.left - 200 || i === 0) {
+            rewiews__items[i].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest'});
+            rewiews_count = i;
+            return;
+        }
+    }
+}
+
+rewiews_btn_back.addEventListener('click', back_rewiew);

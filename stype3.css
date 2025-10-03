@@ -1785,12 +1785,6 @@ a:visited {
     padding: 15px;
 }
 
-@media screen and (min-width: 1994px) {
-    .case__items--item {
-        flex-direction: column;
-    }
-}
-
 .case__images--img-1 {
     width: 157px;
     height: 254px;
@@ -2751,6 +2745,27 @@ a:visited {
     }
 }
 
+.map--item {
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1194px) {
+    .map--item {
+        display: none;
+    }
+}
+
+.map--item-desktop {
+    display: none;
+}
+
+@media screen and (min-width: 1194px) {
+    .map--item-desktop {
+        display: block;
+    }
+}
+
+
 .map__content {
     padding: 30px 0;
     display: flex;
@@ -2759,5 +2774,241 @@ a:visited {
     margin: 0 auto;
 }
 
+@media screen and (min-width: 1194px) {
+    .map__content {
+        flex-direction: row;
+        padding: 30px 20px;
+    }
+}
 
+@media screen and (min-width: 1920px) {
+    .map__content {
+        max-width: 1380px;
+    }
+}
 
+.map__application {
+    padding: 30px 16px;
+    background-color: #FFFFFFCC;
+    box-shadow: 0 4px 15px #00000040;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.map__title {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.map__title--text-1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+    text-align: center;
+    vertical-align: middle;
+    color: #2D2D2D;
+}
+
+.map__title--text-2 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    vertical-align: middle;
+    color: #2D2D2D;
+}
+
+.map__item-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.map__adress {
+    text-wrap: nowrap;
+}
+
+.map__adress-count {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.map__adress-adresses {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.map__times--tiem {
+    display: flex;
+    flex-direction: column;
+}
+
+.map__time {
+    display: flex;
+    flex-direction: column;
+}
+
+.map__days {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.map__times {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.map__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.map__info--name {
+    display: flex;
+    flex-direction: column;
+}
+
+.map__info--phone {
+    display: flex;
+    flex-direction: column;
+}
+
+.map__info--name-text {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+#map__info--name-input {
+    background-color: #F6F6F6;
+    border-radius: 16px;
+    border: none;
+    padding: 16px;
+    
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
+    color: #747474;
+}
+
+#map__info--name-input:focus {
+    color: #5CC2FF;
+    font-weight: 700;
+    outline: none;
+}
+
+.map__info--phone-text {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+#map__info--phone-input {
+    background-color: #F6F6F6;
+    border-radius: 16px;
+    border: none;
+    padding: 16px;
+
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
+    color: #747474;
+}
+
+#map__info--phone-input:focus {
+    color: #5CC2FF;
+    font-weight: 700;
+    outline: none;
+}
+
+.map__consent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.map__consent--btn {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CEE9F9;
+    border: none;
+    border-radius: 28px;
+    gap: 8px;
+
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.map__btn-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #FFFFFF;
+    background-image: url(images/icon_btn-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    border-radius: 32px;
+}
+
+.map__consent--item {
+    display: flex;
+    gap: 15px;
+}
+
+.radiobtn {
+    width: 40px;
+    background-color: #FFFFFF;
+    background-image: url(images/radio_btn.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 20px 10px;
+}
+
+.map__consent--text {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}

@@ -246,3 +246,32 @@ function back_rewiew() {
 }
 
 rewiews_btn_back.addEventListener('click', back_rewiew);
+
+// --------------------------------------------------------input-phone--------------------------------------------------------------------------- \\
+
+const phoneInput = document.getElementById('map__info--phone-input'); 
+phoneInput.addEventListener('input', function(e) {
+  let value = e.target.value.replace(/\D/g, '');
+  
+  if (value.startsWith('7')) {
+    value = value.substring(1);
+  }
+  
+  let formattedValue = '+7';
+  
+  if (value.length > 0) {
+    formattedValue += ' (' + value.substring(0, 3);
+  }
+  if (value.length > 3) {
+    formattedValue += ') ' + value.substring(3, 6);
+  }
+  if (value.length > 6) {
+    formattedValue += '-' + value.substring(6, 8);
+  }
+  if (value.length > 8) {
+    formattedValue += '-' + value.substring(8, 10);
+  }
+  
+  e.target.value = formattedValue;
+});
+

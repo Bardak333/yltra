@@ -3012,3 +3012,115 @@ a:visited {
     letter-spacing: 0%;
     vertical-align: middle;
 }
+
+.footer {
+    background-color: #5CC2FF;
+    padding: 30px 0;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+
+.footer__logo {
+    width: 200px;
+    height: 46px;
+}
+
+.footer__application {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+} 
+
+.footer__aplication--time {
+    display: flex;
+    gap: 6px;
+}
+
+.footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style-type: none;
+    align-items: center;
+}
+
+.footer__nav-btn {
+    background-color:  #5CC2FF;
+    border: none;
+    color: #FFFFFF;
+
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -2%;
+    vertical-align: middle;
+}
+
+.footer--time-day {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+
+.footer--time-number {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+
+.footer__application-btn {
+    background-color: #CEE9F9;
+    padding: 8px 88px;
+    padding-left: 96px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    border-radius: 28px;
+    border: none;
+
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+}
+
+.footer__aplication--btn-icon {
+    background-image: url(images/icon_btn-2.png);
+    background-color: #FFFFFF;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 32px;
+}
+
+.footer__warning-text {
+    color: #FFFFFF99;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+

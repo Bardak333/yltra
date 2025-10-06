@@ -153,44 +153,7 @@ case_counter_btn.forEach ((btn, index) => {
 
 // --------------------------------------------------------diplomas-csroll--------------------------------------------------------------------------- \\
 
-const diplomas_items = document.querySelectorAll('.diplomas__container--item');
-const diplomas_btn_next = document.querySelector('.diplomas__nav-btn_next');
-const diplomas_btn_back = document.querySelector('.diplomas__nav-btn_back');
-let diplomas_count = 0;
 
-function next_diplom() {
-    const diplomas_container = document.querySelector('.diplomas__container');
-    const containerRect = diplomas_container.getBoundingClientRect();
-    
-    for (let i = 0; i < diplomas_items.length; i++) {
-        const rect = diplomas_items[i].getBoundingClientRect();
-        
-        if (rect.left > containerRect.right || i === diplomas_items.length - 1) {
-            diplomas_items[i].scrollIntoView({ behavior: 'smooth', inline: 'end', block: 'nearest'});
-            diplomas_count = i;
-            return;
-        }
-    }
-}
-
-diplomas_btn_next.addEventListener('click', next_diplom);
-
-function back_diplom() {
-    const diplomas_container = document.querySelector('.diplomas__container');
-    const containerRect = diplomas_container.getBoundingClientRect();
-    
-    for (let i = diplomas_items.length - 1; i >= 0; i--) {
-        const rect = diplomas_items[i].getBoundingClientRect();
-        
-        if (rect.right < containerRect.left || i === 0) {
-            diplomas_items[i].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest'});
-            diplomas_count = i;
-            return;
-        }
-    }
-}
-
-diplomas_btn_back.addEventListener('click', back_diplom);
 
 // --------------------------------------------------------questions-btn--------------------------------------------------------------------------- \\
 

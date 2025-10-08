@@ -287,6 +287,22 @@
                 </div>
             </div>
         </div>
+        <div class="quiz__application">
+            <div class="quiz__application__content">
+                <button class="quiz__application-btn"></button>
+                <p class="quiz__application-head_text">
+                    Спасибо! Мы получили ваши ответы
+                </p>
+                <p class="quiz__application-cuit_text">
+                    <span class="quiz__application-cuit_text-bold">Оставьте номер</span> 
+                    и мы свяжемся с вами для расчёта стоимости на  
+                    <span class="quiz__application-cuit_text-blue">бесплатной</span>
+                    <span class="quiz__application-cuit_text-bold">консультации</span>
+                </p>
+                <input type="tel" placeholder="+7 ( ____ ) - ___ - __ - __" id="quiz__application-input" pattern="\+7\s\(\d{3}\)\s-\s\d{3}\s-\s\d{2}\s-\s\d{2}">
+                <div class="quiz__inputFull-icon"></div>
+            </div>
+        </div>
         <div class="quiz">
             <div class="container">
                 <div class="quiz__content">
@@ -310,22 +326,27 @@
                     <div class="quiz__steps">
                         <button class="quiz__steps--item">
                             <p class="quiz__steps--text quiz__steps--text-active">Шаг 1</p>
+                            <div class="quiz__steps--perform"></div>
                             <div class="quiz__steps--btn quiz__steps--btn-active"></div>
                         </button>
                         <button class="quiz__steps--item">
                             <p class="quiz__steps--text">Шаг 2</p>
+                            <div class="quiz__steps--perform"></div>
                             <div class="quiz__steps--btn"></div>
                         </button>
                         <button class="quiz__steps--item">
                             <p class="quiz__steps--text">Шаг 3</p>
+                            <div class="quiz__steps--perform"></div>
                             <div class="quiz__steps--btn"></div>
                         </button>
                         <button class="quiz__steps--item">
                             <p class="quiz__steps--text">Шаг 4</p>
+                            <div class="quiz__steps--perform"></div>
                             <div class="quiz__steps--btn"></div>
                         </button>
                         <button class="quiz__steps--item">
                             <p class="quiz__steps--text">Шаг 5</p>
+                            <div class="quiz__steps--perform"></div>
                             <div class="quiz__steps--btn"></div>
                         </button>
                     </div>
@@ -340,7 +361,7 @@
                                 <div class="quiz__question--item">
                                     <div class="quiz__card">    
                                         <label class="quiz__card--radio-btn">
-                                            <input type="radio" name="option" value="1" class="quiz__card--radio-btn-input ">
+                                            <input type="radio" name="question-1" value="1" class="quiz__card--radio-btn-input ">
                                             <span class="quiz__card--radio-btn-icon">
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
@@ -352,7 +373,7 @@
                                 <div class="quiz__question--item">
                                     <div class="quiz__card">
                                         <label class="quiz__card--radio-btn">
-                                            <input type="radio" name="option" value="1" class="quiz__card--radio-btn-input ">
+                                            <input type="radio" name="question-1" value="2" class="quiz__card--radio-btn-input ">
                                             <span class="quiz__card--radio-btn-icon">
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
@@ -364,7 +385,7 @@
                                 <div class="quiz__question--item">
                                     <div class="quiz__card">
                                         <label class="quiz__card--radio-btn">
-                                            <input type="radio" name="option" value="1" class="quiz__card--radio-btn-input ">
+                                            <input type="radio" name="question-1" value="3" class="quiz__card--radio-btn-input ">
                                             <span class="quiz__card--radio-btn-icon">
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
@@ -376,7 +397,7 @@
                                 <div class="quiz__question--item">
                                     <div class="quiz__card-dontKnow">
                                         <label class="quiz__card--radio-btn">
-                                            <input type="radio" name="option" value="1" class="quiz__card--radio-btn-input ">
+                                            <input type="radio" name="question-1" value="4" class="quiz__card--radio-btn-input ">
                                             <span class="quiz__card--radio-btn-icon">
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
@@ -397,43 +418,43 @@
                                 <div class="quiz__question--item">
                                     <div class="quiz__card">    
                                         <label class="quiz__card--radio-btn">
-                                            <input type="radio" name="option" value="1" class="quiz__card--radio-btn-input ">
+                                            <input type="radio" name="question-2" value="1" class="quiz__card--radio-btn-input ">
                                             <span class="quiz__card--radio-btn-icon">
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
                                         </label>
                                         <img class="quiz__card-img" src="images/skullUp.png" alt="skullUp">
-                                        <p class="quiz__card-text">Верхнюю</p>
+                                        <p class="quiz__card-text">Да</p>
                                     </div>
                                 </div>
                                 <div class="quiz__question--item">
                                     <div class="quiz__card">
                                         <label class="quiz__card--radio-btn">
-                                            <input type="radio" name="option" value="1" class="quiz__card--radio-btn-input ">
+                                            <input type="radio" name="question-2" value="2" class="quiz__card--radio-btn-input">
                                             <span class="quiz__card--radio-btn-icon">
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
                                         </label>
                                         <img class="quiz__card-img" src="images/skullDown.png" alt="skullUp">
-                                        <p class="quiz__card-text">Нижнюю</p>
+                                        <p class="quiz__card-text">Нет</p>
                                     </div>
                                 </div>
                                 <div class="quiz__question--item">
                                     <div class="quiz__card">
                                         <label class="quiz__card--radio-btn">
-                                            <input type="radio" name="option" value="1" class="quiz__card--radio-btn-input ">
+                                            <input type="radio" name="question-2" value="3" class="quiz__card--radio-btn-input" >
                                             <span class="quiz__card--radio-btn-icon">
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
                                         </label>
                                         <img class="quiz__card-img" src="images/skullFull.png" alt="skullUp">
-                                        <p class="quiz__card-text">Обе</p>
+                                        <p class="quiz__card-text">Хотел бы</p>
                                     </div>
                                 </div>
                                 <div class="quiz__question--item">
                                     <div class="quiz__card-dontKnow">
                                         <label class="quiz__card--radio-btn">
-                                            <input type="radio" name="option" value="1" class="quiz__card--radio-btn-input ">
+                                            <input type="radio" name="question-2" value="4" class="quiz__card--radio-btn-input">
                                             <span class="quiz__card--radio-btn-icon">
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
@@ -443,6 +464,186 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="quiz__question__container">
+                            <div class="quiz__question-text">
+                                <p>
+                                    3. Как относишься к ЛГБТ?
+                                </p>
+                            </div>
+                            <div class="quiz__question-items">
+                                <div class="quiz__question--item">
+                                    <div class="quiz__card">    
+                                        <label class="quiz__card--radio-btn">
+                                            <input type="radio" name="question-3" value="1" class="quiz__card--radio-btn-input ">
+                                            <span class="quiz__card--radio-btn-icon">
+                                                <span class="quiz__card--radio-btn-check"></span>
+                                            </span>
+                                        </label>
+                                        <img class="quiz__card-img" src="images/skullUp.png" alt="skullUp">
+                                        <p class="quiz__card-text">Норм</p>
+                                    </div>
+                                </div>
+                                <div class="quiz__question--item">
+                                    <div class="quiz__card">
+                                        <label class="quiz__card--radio-btn">
+                                            <input type="radio" name="question-3" value="2" class="quiz__card--radio-btn-input">
+                                            <span class="quiz__card--radio-btn-icon">
+                                                <span class="quiz__card--radio-btn-check"></span>
+                                            </span>
+                                        </label>
+                                        <img class="quiz__card-img" src="images/skullDown.png" alt="skullUp">
+                                        <p class="quiz__card-text">Осуждаю</p>
+                                    </div>
+                                </div>
+                                <div class="quiz__question--item">
+                                    <div class="quiz__card">
+                                        <label class="quiz__card--radio-btn">
+                                            <input type="radio" name="question-3" value="3" class="quiz__card--radio-btn-input" >
+                                            <span class="quiz__card--radio-btn-icon">
+                                                <span class="quiz__card--radio-btn-check"></span>
+                                            </span>
+                                        </label>
+                                        <img class="quiz__card-img" src="images/skullFull.png" alt="skullUp">
+                                        <p class="quiz__card-text">Отношусь прямо</p>
+                                    </div>
+                                </div>
+                                <div class="quiz__question--item">
+                                    <div class="quiz__card-dontKnow">
+                                        <label class="quiz__card--radio-btn">
+                                            <input type="radio" name="question-3" value="4" class="quiz__card--radio-btn-input">
+                                            <span class="quiz__card--radio-btn-icon">
+                                                <span class="quiz__card--radio-btn-check"></span>
+                                            </span>
+                                        </label>
+                                        <img class="quiz__card-img-dontKnow" src="images/questionCard.png" alt="skullUp">
+                                        <p class="quiz__card-text">Затрудняюсь ответить</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz__question__container">
+                            <div class="quiz__question-text">
+                                <p>
+                                    4. Эщкере
+                                </p>
+                            </div>
+                            <div class="quiz__question-items">
+                                <div class="quiz__question--item">
+                                    <div class="quiz__card">    
+                                        <label class="quiz__card--radio-btn">
+                                            <input type="radio" name="question-4" value="1" class="quiz__card--radio-btn-input ">
+                                            <span class="quiz__card--radio-btn-icon">
+                                                <span class="quiz__card--radio-btn-check"></span>
+                                            </span>
+                                        </label>
+                                        <img class="quiz__card-img" src="images/skullUp.png" alt="skullUp">
+                                        <p class="quiz__card-text">Вацаонимаа</p>
+                                    </div>
+                                </div>
+                                <div class="quiz__question--item">
+                                    <div class="quiz__card">
+                                        <label class="quiz__card--radio-btn">
+                                            <input type="radio" name="question-4" value="2" class="quiz__card--radio-btn-input">
+                                            <span class="quiz__card--radio-btn-icon">
+                                                <span class="quiz__card--radio-btn-check"></span>
+                                            </span>
+                                        </label>
+                                        <img class="quiz__card-img" src="images/skullDown.png" alt="skullUp">
+                                        <p class="quiz__card-text">Чупапи муняня</p>
+                                    </div>
+                                </div>
+                                <div class="quiz__question--item">
+                                    <div class="quiz__card">
+                                        <label class="quiz__card--radio-btn">
+                                            <input type="radio" name="question-4" value="3" class="quiz__card--radio-btn-input" >
+                                            <span class="quiz__card--radio-btn-icon">
+                                                <span class="quiz__card--radio-btn-check"></span>
+                                            </span>
+                                        </label>
+                                        <img class="quiz__card-img" src="images/skullFull.png" alt="skullUp">
+                                        <p class="quiz__card-text">Тун тун сахур</p>
+                                    </div>
+                                </div>
+                                <div class="quiz__question--item">
+                                    <div class="quiz__card-dontKnow">
+                                        <label class="quiz__card--radio-btn">
+                                            <input type="radio" name="question-4" value="4" class="quiz__card--radio-btn-input">
+                                            <span class="quiz__card--radio-btn-icon">
+                                                <span class="quiz__card--radio-btn-check"></span>
+                                            </span>
+                                        </label>
+                                        <img class="quiz__card-img-dontKnow" src="images/questionCard.png" alt="skullUp">
+                                        <p class="quiz__card-text">Затрудняюсь ответить</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz__question__container">
+                            <div class="quiz__question-text">
+                                <p>
+                                    5. Последний вопрос
+                                </p>
+                            </div>
+                            <div class="quiz__question-items">
+                                <div class="quiz__question--item">
+                                    <div class="quiz__card">    
+                                        <label class="quiz__card--radio-btn">
+                                            <input type="radio" name="question-5" value="1" class="quiz__card--radio-btn-input ">
+                                            <span class="quiz__card--radio-btn-icon">
+                                                <span class="quiz__card--radio-btn-check"></span>
+                                            </span>
+                                        </label>
+                                        <img class="quiz__card-img" src="images/skullUp.png" alt="skullUp">
+                                        <p class="quiz__card-text">Да</p>
+                                    </div>
+                                </div>
+                                <div class="quiz__question--item">
+                                    <div class="quiz__card">
+                                        <label class="quiz__card--radio-btn">
+                                            <input type="radio" name="question-5" value="2" class="quiz__card--radio-btn-input">
+                                            <span class="quiz__card--radio-btn-icon">
+                                                <span class="quiz__card--radio-btn-check"></span>
+                                            </span>
+                                        </label>
+                                        <img class="quiz__card-img" src="images/skullDown.png" alt="skullUp">
+                                        <p class="quiz__card-text">Нет</p>
+                                    </div>
+                                </div>
+                                <div class="quiz__question--item">
+                                    <div class="quiz__card">
+                                        <label class="quiz__card--radio-btn">
+                                            <input type="radio" name="question-5" value="3" class="quiz__card--radio-btn-input" >
+                                            <span class="quiz__card--radio-btn-icon">
+                                                <span class="quiz__card--radio-btn-check"></span>
+                                            </span>
+                                        </label>
+                                        <img class="quiz__card-img" src="images/skullFull.png" alt="skullUp">
+                                        <p class="quiz__card-text">Да нет</p>
+                                    </div>
+                                </div>
+                                <div class="quiz__question--item">
+                                    <div class="quiz__card-dontKnow">
+                                        <label class="quiz__card--radio-btn">
+                                            <input type="radio" name="question-5" value="4" class="quiz__card--radio-btn-input">
+                                            <span class="quiz__card--radio-btn-icon">
+                                                <span class="quiz__card--radio-btn-check"></span>
+                                            </span>
+                                        </label>
+                                        <img class="quiz__card-img-dontKnow" src="images/questionCard.png" alt="skullUp">
+                                        <p class="quiz__card-text">Затрудняюсь ответить</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__nav">
+                        <button class="quiz__nav--btn_back">
+                            <div class="case__scroller-btn-icon"></div>
+                        </button>
+                        <div class="quiz__nav--btn_next">
+                            Следующуий шаг
+                            <div class="case__scroller-btn-icon"></div>
                         </div>
                     </div>
                 </div>
@@ -1193,7 +1394,7 @@
                             </button>
                             <div class="map__consent--item">
                                 <lable class="map__checkbox">
-                                    <input type="checkbox" class="map__checkbox--input">
+                                    <input type="checkbox" class="map__checkbox--input" checked>
                                     <span class="map__checkbox--slider"></span>
                                 </lable>
                                 <p class="map__consent--text">Оставляя заявку, я даю своё согласие на обработку персональных данных</p>
@@ -1275,7 +1476,9 @@
 
 
 
-    <script src="script3.js"></script>
-    <script src="diplomOpenView.js"></script>
+    <script src="JS/script3.js"></script>
+    <script src="JS/diplomOpenView.js"></script>
+    <script src="JS/quizScroller.js"></script>
+    <script src="JS/quizApplication.js"></script>
 </body>
 </html>

@@ -301,6 +301,10 @@
                 </p>
                 <input type="tel" placeholder="+7 ( ____ ) - ___ - __ - __" id="quiz__application-input" pattern="\+7\s\(\d{3}\)\s-\s\d{3}\s-\s\d{2}\s-\s\d{2}">
                 <div class="quiz__inputFull-icon"></div>
+                <button class="quiz__application-btn_complete">
+                    Получить подарки
+                    <div class="quiz__application-btn_complete--icon"></div>
+                </button>
             </div>
         </div>
         <div class="quiz">
@@ -346,6 +350,11 @@
                         </button>
                         <button class="quiz__steps--item">
                             <p class="quiz__steps--text">Шаг 5</p>
+                            <div class="quiz__steps--perform"></div>
+                            <div class="quiz__steps--btn"></div>
+                        </button>
+                        <button class="quiz__steps--item">
+                            <p class="quiz__steps--text">Шаг 6</p>
                             <div class="quiz__steps--perform"></div>
                             <div class="quiz__steps--btn"></div>
                         </button>
@@ -411,7 +420,7 @@
                         <div class="quiz__question__container">
                             <div class="quiz__question-text">
                                 <p>
-                                    2. Сосал?
+                                    2. Есть ли у вас перечисленные заболевания?
                                 </p>
                             </div>
                             <div class="quiz__question-items">
@@ -423,8 +432,7 @@
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
                                         </label>
-                                        <img class="quiz__card-img" src="images/skullUp.png" alt="skullUp">
-                                        <p class="quiz__card-text">Да</p>
+                                        <p class="quiz__card-text">Пародонтоз</p>
                                     </div>
                                 </div>
                                 <div class="quiz__question--item">
@@ -435,8 +443,7 @@
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
                                         </label>
-                                        <img class="quiz__card-img" src="images/skullDown.png" alt="skullUp">
-                                        <p class="quiz__card-text">Нет</p>
+                                        <p class="quiz__card-text">Диабет</p>
                                     </div>
                                 </div>
                                 <div class="quiz__question--item">
@@ -447,8 +454,7 @@
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
                                         </label>
-                                        <img class="quiz__card-img" src="images/skullFull.png" alt="skullUp">
-                                        <p class="quiz__card-text">Хотел бы</p>
+                                        <p class="quiz__card-text">Онкология</p>
                                     </div>
                                 </div>
                                 <div class="quiz__question--item">
@@ -459,8 +465,7 @@
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
                                         </label>
-                                        <img class="quiz__card-img-dontKnow" src="images/questionCard.png" alt="skullUp">
-                                        <p class="quiz__card-text">Затрудняюсь ответить</p>
+                                        <p class="quiz__card-text">Ничего из списка</p>
                                     </div>
                                 </div>
                             </div>
@@ -468,7 +473,7 @@
                         <div class="quiz__question__container">
                             <div class="quiz__question-text">
                                 <p>
-                                    3. Как относишься к ЛГБТ?
+                                    3. Какого состояние вашей костной ткани?
                                 </p>
                             </div>
                             <div class="quiz__question-items">
@@ -480,8 +485,7 @@
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
                                         </label>
-                                        <img class="quiz__card-img" src="images/skullUp.png" alt="skullUp">
-                                        <p class="quiz__card-text">Норм</p>
+                                        <p class="quiz__card-text">Есть атрофия кости</p>
                                     </div>
                                 </div>
                                 <div class="quiz__question--item">
@@ -492,32 +496,18 @@
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
                                         </label>
-                                        <img class="quiz__card-img" src="images/skullDown.png" alt="skullUp">
-                                        <p class="quiz__card-text">Осуждаю</p>
+                                        <p class="quiz__card-text">Нет атрофии кости</p>
                                     </div>
                                 </div>
                                 <div class="quiz__question--item">
-                                    <div class="quiz__card">
+                                    <div class="quiz__card-dontKnow">
                                         <label class="quiz__card--radio-btn">
                                             <input type="radio" name="question-3" value="3" class="quiz__card--radio-btn-input" >
                                             <span class="quiz__card--radio-btn-icon">
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
                                         </label>
-                                        <img class="quiz__card-img" src="images/skullFull.png" alt="skullUp">
-                                        <p class="quiz__card-text">Отношусь прямо</p>
-                                    </div>
-                                </div>
-                                <div class="quiz__question--item">
-                                    <div class="quiz__card-dontKnow">
-                                        <label class="quiz__card--radio-btn">
-                                            <input type="radio" name="question-3" value="4" class="quiz__card--radio-btn-input">
-                                            <span class="quiz__card--radio-btn-icon">
-                                                <span class="quiz__card--radio-btn-check"></span>
-                                            </span>
-                                        </label>
-                                        <img class="quiz__card-img-dontKnow" src="images/questionCard.png" alt="skullUp">
-                                        <p class="quiz__card-text">Затрудняюсь ответить</p>
+                                        <p class="quiz__card-text">Не знаю</p>
                                     </div>
                                 </div>
                             </div>
@@ -525,7 +515,7 @@
                         <div class="quiz__question__container">
                             <div class="quiz__question-text">
                                 <p>
-                                    4. Эщкере
+                                    4. Как Вы относитесь к стоматологическим процедурам?
                                 </p>
                             </div>
                             <div class="quiz__question-items">
@@ -537,8 +527,7 @@
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
                                         </label>
-                                        <img class="quiz__card-img" src="images/skullUp.png" alt="skullUp">
-                                        <p class="quiz__card-text">Вацаонимаа</p>
+                                        <p class="quiz__card-text">Спокойно</p>
                                     </div>
                                 </div>
                                 <div class="quiz__question--item">
@@ -549,8 +538,7 @@
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
                                         </label>
-                                        <img class="quiz__card-img" src="images/skullDown.png" alt="skullUp">
-                                        <p class="quiz__card-text">Чупапи муняня</p>
+                                        <p class="quiz__card-text">Немного опасаюсь</p>
                                     </div>
                                 </div>
                                 <div class="quiz__question--item">
@@ -561,28 +549,15 @@
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
                                         </label>
-                                        <img class="quiz__card-img" src="images/skullFull.png" alt="skullUp">
-                                        <p class="quiz__card-text">Тун тун сахур</p>
+                                        <p class="quiz__card-text">Сильно боюсь</p>
                                     </div>
-                                </div>
-                                <div class="quiz__question--item">
-                                    <div class="quiz__card-dontKnow">
-                                        <label class="quiz__card--radio-btn">
-                                            <input type="radio" name="question-4" value="4" class="quiz__card--radio-btn-input">
-                                            <span class="quiz__card--radio-btn-icon">
-                                                <span class="quiz__card--radio-btn-check"></span>
-                                            </span>
-                                        </label>
-                                        <img class="quiz__card-img-dontKnow" src="images/questionCard.png" alt="skullUp">
-                                        <p class="quiz__card-text">Затрудняюсь ответить</p>
-                                    </div>
-                                </div>
+                                </div>  
                             </div>
                         </div>
                         <div class="quiz__question__container">
                             <div class="quiz__question-text">
                                 <p>
-                                    5. Последний вопрос
+                                    5. Как скоро вы хотели бы начать лечиться?
                                 </p>
                             </div>
                             <div class="quiz__question-items">
@@ -594,8 +569,7 @@
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
                                         </label>
-                                        <img class="quiz__card-img" src="images/skullUp.png" alt="skullUp">
-                                        <p class="quiz__card-text">Да</p>
+                                        <p class="quiz__card-text">Как можно скорее</p>
                                     </div>
                                 </div>
                                 <div class="quiz__question--item">
@@ -606,8 +580,7 @@
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
                                         </label>
-                                        <img class="quiz__card-img" src="images/skullDown.png" alt="skullUp">
-                                        <p class="quiz__card-text">Нет</p>
+                                        <p class="quiz__card-text">В течение месяца</p>
                                     </div>
                                 </div>
                                 <div class="quiz__question--item">
@@ -618,20 +591,71 @@
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
                                         </label>
-                                        <img class="quiz__card-img" src="images/skullFull.png" alt="skullUp">
-                                        <p class="quiz__card-text">Да нет</p>
+                                        <p class="quiz__card-text">Через 2-3 месяца</p>
                                     </div>
                                 </div>
                                 <div class="quiz__question--item">
-                                    <div class="quiz__card-dontKnow">
+                                    <div class="quiz__card">
                                         <label class="quiz__card--radio-btn">
                                             <input type="radio" name="question-5" value="4" class="quiz__card--radio-btn-input">
                                             <span class="quiz__card--radio-btn-icon">
                                                 <span class="quiz__card--radio-btn-check"></span>
                                             </span>
                                         </label>
-                                        <img class="quiz__card-img-dontKnow" src="images/questionCard.png" alt="skullUp">
-                                        <p class="quiz__card-text">Затрудняюсь ответить</p>
+                                        <p class="quiz__card-text">Через полгода</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz__question__container">
+                            <div class="quiz__question-text">
+                                <p>
+                                    6. Куда Вам отправить расчёт стоимости по имплантации зубов?
+                                </p>
+                            </div>
+                            <div class="quiz__question-items">
+                                <div class="quiz__question--item">
+                                    <div class="quiz__card">    
+                                        <label class="quiz__card--radio-btn">
+                                            <input type="radio" name="question-6" value="1" class="quiz__card--radio-btn-input ">
+                                            <span class="quiz__card--radio-btn-icon">
+                                                <span class="quiz__card--radio-btn-check"></span>
+                                            </span>
+                                        </label>
+                                        <p class="quiz__card-text">Telegram</p>
+                                    </div>
+                                </div>
+                                <div class="quiz__question--item">
+                                    <div class="quiz__card">
+                                        <label class="quiz__card--radio-btn">
+                                            <input type="radio" name="question-6" value="2" class="quiz__card--radio-btn-input">
+                                            <span class="quiz__card--radio-btn-icon">
+                                                <span class="quiz__card--radio-btn-check"></span>
+                                            </span>
+                                        </label>
+                                        <p class="quiz__card-text">WhatsApp</p>
+                                    </div>
+                                </div>
+                                <div class="quiz__question--item">
+                                    <div class="quiz__card">
+                                        <label class="quiz__card--radio-btn">
+                                            <input type="radio" name="question-6" value="3" class="quiz__card--radio-btn-input" >
+                                            <span class="quiz__card--radio-btn-icon">
+                                                <span class="quiz__card--radio-btn-check"></span>
+                                            </span>
+                                        </label>
+                                        <p class="quiz__card-text">Viber</p>
+                                    </div>
+                                </div>
+                                <div class="quiz__question--item">
+                                    <div class="quiz__card">
+                                        <label class="quiz__card--radio-btn">
+                                            <input type="radio" name="question-6" value="4" class="quiz__card--radio-btn-input">
+                                            <span class="quiz__card--radio-btn-icon">
+                                                <span class="quiz__card--radio-btn-check"></span>
+                                            </span>
+                                        </label>
+                                        <p class="quiz__card-text">Бесплатная консультация по телефону</p>
                                     </div>
                                 </div>
                             </div>
@@ -1475,10 +1499,17 @@
 
 
 
-
-    <script src="JS/script3.js"></script>
+    
+    <script src="JS/quizApplication.js"></script>
+    <script src="JS/mainApplicationBtn.js"></script>
+    <script src="JS/mobileMenuOpen.js"></script>
     <script src="JS/diplomOpenView.js"></script>
     <script src="JS/quizScroller.js"></script>
-    <script src="JS/quizApplication.js"></script>
+    <script src="JS/mapInfoInput.js"></script>
+    <script src="JS/questionsViewItems.js"></script>
+    <script src="JS/caseScroll.js"></script>
+    <script src="JS/skullAnimation.js"></script>
+    <script src="JS/rewiewsView.js"></script>
+
 </body>
 </html>

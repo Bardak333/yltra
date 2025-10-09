@@ -1,5 +1,50 @@
 const quizInput = document.getElementById('quiz__application-input'); 
 const checkOnIcon = document.querySelector('.quiz__inputFull-icon');
+const copleteBtn = document.querySelector('.quiz__application-btn_complete');
+let applicationList = [];
+let quizArrow = {};
+
+function collectAllAnswersToList() {
+    const answersList = [];
+    
+    questionItem.forEach((container, index) => {
+        const questionNumber = index + 1;
+        const questionName = `question-${questionNumber}`;
+        const selectedRadio = container.querySelector(`input[name="${questionName}"]:checked`);
+        
+        if (selectedRadio) {
+            
+            answersList.push({
+                [`question-${questionNumber}`]: selectedRadio.value
+            });
+        }
+    });
+
+    answersList.push({'tel' : value = quizInput.value});
+    
+    return answersList;
+
+}
+
+function handleCompleteButtonClick() {
+    applicationList = collectAllAnswersToList();
+    
+    quizArrow = {
+        answers: applicationList
+    };
+    
+    console.log('quizArrow:', quizArrow);
+}
+
+copleteBtn.addEventListener('click', () => {
+    if (!isApplicationComplete) {
+        handleCompleteButtonClick();
+        window.isApplicationComplete = true;
+    }
+
+});
+
+
 quizInput.addEventListener('input', function(e) {
   let value = e.target.value.replace(/\D/g, '');
   
@@ -32,3 +77,5 @@ quizInput.addEventListener('input', function(e) {
   }
 
 });
+
+

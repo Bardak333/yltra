@@ -5,6 +5,7 @@ const stepPerform = document.querySelectorAll('.quiz__steps--perform');
 const stepBtn = document.querySelectorAll('.quiz__steps--item');
 const stepUnderLine = document.querySelectorAll('.quiz__steps--btn');
 const questionItem = document.querySelectorAll('.quiz__question__container');
+const quizApplication = document.querySelector('.quiz__application');
 let questionCount = 0;
 
 function scrolltoNextQuestion () {
@@ -32,6 +33,13 @@ function scrolltoNextQuestion () {
                 block: 'nearest'
             });
         } 
+
+        else if (questionCount == stepUnderLine.length - 1 && isQuestionSelected()) {
+    
+            quizApplication.classList.add('quiz__application_active');
+            console.log('Работает форма');
+    
+        }
     }
 
     else {

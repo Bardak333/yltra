@@ -187,7 +187,7 @@
     opacity: 1;
     transform: scaleX(1);
     transform-origin: left center; 
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease;
     overflow: hidden;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent;
@@ -243,7 +243,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     border-radius: 32px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 @media screen and (min-width: 1194px) {
@@ -539,7 +539,7 @@ a:visited {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease;
 }
 
 .mobile__menu__btn:hover {
@@ -558,7 +558,7 @@ a:visited {
     background-repeat: no-repeat;
     background-size: 16px;
     background-color: #FFFFFF;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .container__mobile-menu {
@@ -1057,7 +1057,7 @@ a:visited {
     justify-content: center;
     position: relative;
     z-index: 5;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease;
     cursor: pointer;
     
     font-family: "Work Sans", sans-serif;
@@ -1115,7 +1115,7 @@ a:visited {
     border-radius: 32px;
     position: relative;
     z-index: 6;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 @media screen and (min-width: 1194px) {
@@ -1474,7 +1474,7 @@ a:visited {
     font-weight: 400;
     font-size: 16px;
     color: #2D2D2D;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease;
 }
 
 .aboutUs__widget-1--btn:hover {
@@ -1508,7 +1508,7 @@ a:visited {
     background-repeat: no-repeat;
     background-size: 24px;
     border-radius: 32px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 @media screen and (min-width: 1920px) {
@@ -1782,6 +1782,7 @@ a:visited {
 @media screen and (min-width: 1194px) {
     .ourWorks__content {
         max-width: 1162px;
+        padding: 60px 0;
     }
 }
 
@@ -2395,6 +2396,12 @@ a:visited {
     display: flex;
     flex-direction: column;
     gap: 32px;
+}
+
+@media screen and (min-width: 1194px) {
+    .questions__content {
+        padding: 60px 0;
+    }
 }
 
 .questions__header {
@@ -3058,7 +3065,7 @@ a:visited {
     gap: 8px;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease;
     cursor: pointer;
 
     font-family: "Work Sans", sans-serif;
@@ -3085,7 +3092,7 @@ a:visited {
     background-repeat: no-repeat;
     background-size: 16px;
     border-radius: 32px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .map__consent--item {
@@ -3249,7 +3256,7 @@ a:visited {
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease;
 
     font-family: "Work Sans", sans-serif;
     font-weight: 400;
@@ -3281,7 +3288,7 @@ a:visited {
     width: 48px;
     height: 48px;
     border-radius: 32px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .footer__warning-text {
@@ -3500,6 +3507,12 @@ a:visited {
     position: relative;
 }
 
+@media screen and (min-width: 1194px) {
+    .quiz__content {
+        padding: 60px 0;
+    }
+}
+
 .quiz__widgets {
     display: flex;
     flex-direction: column;
@@ -3507,6 +3520,12 @@ a:visited {
     padding: 0 5px;
     padding-bottom: 50px;
     position: relative;
+}
+
+@media screen and (min-width: 1194px) {
+    .quiz__widgets {
+        padding-bottom: 68px;
+    }
 }
 
 .quiz--widget-1 {
@@ -3528,6 +3547,12 @@ a:visited {
     color: #2D2D2D;
 }
 
+@media screen and (min-width: 1194px) {
+    .quiz--widget-1 {
+        font-size: 28px;
+    }
+}
+
 .quiz--widget-1-icon {
     width: 28px;
     height: 28px;
@@ -3537,6 +3562,12 @@ a:visited {
     background-size: contain;
 }
 
+@media screen and (min-width: 1194px) {
+    .quiz--widget-1-icon {
+        width: 37px;
+        height: 37px;
+    }
+}
 
 .quiz--widget-2 {
     padding: 8px 12px;
@@ -3558,6 +3589,12 @@ a:visited {
     color: #2D2D2D;
 }
 
+@media screen and (min-width: 1194px) {
+    .quiz--widget-2 {
+        font-size: 28px;
+    }
+}
+
 .quiz--widget-2-icon {
     width: 28px;
     height: 28px;
@@ -3565,6 +3602,13 @@ a:visited {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+@media screen and (min-width: 1194px) {
+    .quiz--widget-2-icon {
+        width: 37px;
+        height: 37px;
+    }
 }
 
 .quiz--widget-3 {
@@ -3576,6 +3620,7 @@ a:visited {
     justify-content: center;
     position: absolute;
     bottom: 0;
+    align-items: center;
 }
 
 .quiz--widget-3-icon {
@@ -3585,6 +3630,13 @@ a:visited {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+@media screen and (min-width: 1194px) {
+    .quiz--widget-3-icon {
+        width: 37px;
+        height: 37px;
+    }
 }
 
 .quiz--widget-3_text {
@@ -3597,6 +3649,12 @@ a:visited {
     color: #8B7603;
 }
 
+@media screen and (min-width: 1194px) {
+    .quiz--widget-3_text {
+        font-size: 24px;
+    }
+}
+
 .quiz--widget-3-text-bold {
     font-family: "Work Sans", sans-serif;
     font-weight: 700;
@@ -3605,6 +3663,12 @@ a:visited {
     letter-spacing: -1%;
     vertical-align: middle;
     color: #8B7603;
+}
+
+@media screen and (min-width: 1194px) {
+    .quiz--widget-3-text-bold {
+        font-size: 16px;
+    }
 }
 
 .quiz__steps {
@@ -3690,6 +3754,13 @@ a:visited {
     margin: 0 auto;
 }
 
+@media screen and (min-width: 1194px) {
+    .quiz__questions {
+        max-width: 1162px;
+        gap: 32px;
+    }
+}
+
 .quiz__question-text {
     padding: 0 16px;
 
@@ -3704,12 +3775,26 @@ a:visited {
     color: #FFFFFF;
 }
 
+@media screen and (min-width: 1194px) {
+    .quiz__question-text {
+        font-size: 36px;
+    }
+}
+
 .quiz__question-items {
     display: flex;
     flex-wrap: wrap;
     width: 360px;
-    margin: 0 auto;
-    
+    margin: 0 auto;   
+}
+
+@media screen and (min-width: 1194px) {
+    .quiz__question-items {
+        flex-wrap: nowrap;
+        width: 1162px;
+        gap: 16px;
+        justify-content: center;
+    }
 }
 
 .quiz__question__container {
@@ -3720,10 +3805,23 @@ a:visited {
     justify-content: space-between;
 }
 
+@media screen and (min-width: 1194px) {
+    .quiz__question__container {
+        max-width: 1162px;
+        gap: 32px;
+    }
+}
+
 .quiz__question--item {
     display: flex;
     gap: 10px;
     padding: 10px 10px;
+}
+
+@media screen and (min-width: 1194px) {
+    .quiz__question--item {
+        padding: 0;
+    }
 }
 
 .quiz__card {
@@ -3737,6 +3835,14 @@ a:visited {
     padding: 16px;
 }
 
+@media screen and (min-width: 1194px) {
+    .quiz__card {
+        width: 278px;
+        height: 278px;
+
+    }
+}
+
 .quiz__card-dontKnow {
     width: 160px;
     height: 200px;
@@ -3746,6 +3852,14 @@ a:visited {
     flex-direction: column;
     align-items: center;
     padding: 16px;
+}
+
+@media screen and (min-width: 1194px) {
+    .quiz__card-dontKnow {
+        width: 278px;
+        height: 278px;
+        
+    }
 }
 
 .quiz__card-text {
@@ -3758,14 +3872,22 @@ a:visited {
     text-align: center;
 }
 
+@media screen and (min-width: 1194px) {
+    .quiz__card-text {
+        font-size: 24px;
+    }
+}
+
 .quiz__card-img {
     width: 127px;
 }
 
-.quiz__card-img-dontKnow {
-    opacity: 0.6;
-    width: 127px;
+@media screen and (min-width: 1194px) {
+    .quiz__card-img {
+        width: 200px;
+    }   
 }
+
 
 /* From Uiverse.io by risabbir */ 
 .checkbox-container {
@@ -3876,8 +3998,18 @@ a:visited {
 .quiz__card--radio-btn-input {
     position: absolute;
     opacity: 0;
-    width: 0;
-    height: 0;
+    width: 120px;
+    height: 170px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1194px) {
+    .quiz__card--radio-btn-input {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 .quiz__card--radio-btn-icon {
@@ -4041,6 +4173,12 @@ a:visited {
     position: relative;
 }
 
+@media screen and (min-width: 1194px) {
+    .quiz__application__content {
+        max-width: 574px;
+    }
+}
+
 .quiz__application-btn {
     width: 42px;
     height: 24px;
@@ -4074,6 +4212,12 @@ a:visited {
     color: #2D2D2D;
 }
 
+@media screen and (min-width: 1194px) {
+    .quiz__application-head_text {
+        font-size: 36px;
+    }
+}
+
 .quiz__application-cuit_text {
     font-family: "Work Sans", sans-serif;
     font-weight: 400;
@@ -4085,9 +4229,21 @@ a:visited {
     color: #747474;
 }
 
+@media screen and (min-width: 1194px) {
+    .quiz__application-cuit_text {
+        font-size: 24px;
+    }
+}
+
 .quiz__application-cuit_text-bold {
     font-weight: 600;
     font-size: 18px;
+}
+
+@media screen and (min-width: 1194px) {
+    .quiz__application-cuit_text-bold {
+        font-size: 24px;
+    }
 }
 
 .quiz__application-cuit_text-blue {
@@ -4096,13 +4252,18 @@ a:visited {
     color: #5CC2FF;
 }
 
+@media screen and (min-width: 1194px) {
+    .quiz__application-cuit_text-blue {
+        font-size: 24px;
+    }
+}
+
 #quiz__application-input {
     background-color: #CEE9F926;
     border-radius: 16px;
     border: 2px solid #CEE9F9;
     padding: 16px;
     padding-left: 24px;
-    
     font-family: "Work Sans", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -4110,6 +4271,16 @@ a:visited {
     letter-spacing: -0.5px;
     vertical-align: middle;
     color: #2D2D2D;
+    transition: all 0.2s ease;
+}
+
+
+@media screen and (min-width: 1194px) {
+    #quiz__application-input {
+        font-size: 20px;
+        padding: 24px;
+        border-radius: 28px;
+    }
 }
 
 #quiz__application-input:focus {
@@ -4135,6 +4306,18 @@ a:visited {
     opacity: 0;
 }
 
+@media screen and (min-width: 1194px) {
+    .quiz__inputFull-icon {
+        width: 60px;
+        height: 40px;
+        border-radius: 24px;
+        background-image: url(images/checkOn.png);
+        background-size: 26px;
+        right: 49px;
+        top: 258px;
+    }
+}
+
 .quiz__inputFull-icon-active {
     transform: rotate(0) translateY(0) translateX(0);
     opacity: 1;
@@ -4151,7 +4334,7 @@ a:visited {
     background: linear-gradient(to right, #96d8ff 50%, #CEE9F9 50%);
     background-size: 200% 100%;
     background-position: right bottom;
-    transition: all 0.1s ease;
+    transition: all 0.2s ease;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);

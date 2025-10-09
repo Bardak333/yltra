@@ -1,6 +1,6 @@
 const quizInput = document.getElementById('quiz__application-input'); 
 const checkOnIcon = document.querySelector('.quiz__inputFull-icon');
-const copleteBtn = document.querySelector('.quiz__application-btn_complete');
+const completeBtn = document.querySelector('.quiz__application-btn_complete');
 let applicationList = [];
 let quizArrow = {};
 
@@ -13,14 +13,19 @@ function collectAllAnswersToList() {
         const selectedRadio = container.querySelector(`input[name="${questionName}"]:checked`);
         
         if (selectedRadio) {
+
+            let questionText = container.querySelector('.quiz__question-text p').textContent.trim();
+            questionText = questionText.replace(/^\d+\.\s*/, '');
+            const answerCard = selectedRadio.closest('.quiz__card, .quiz__card-dontKnow');
+            const answerText = answerCard.querySelector('.quiz__card-text').textContent.trim();
             
             answersList.push({
-                [`question-${questionNumber}`]: selectedRadio.value
+                [`question_${questionNumber}`]: `"${questionText} : ${answerText}"`
             });
         }
     });
 
-    answersList.push({'tel' : value = quizInput.value});
+    answersList.push({'phone' : value = quizInput.value});
     
     return answersList;
 
@@ -36,11 +41,14 @@ function handleCompleteButtonClick() {
     console.log('quizArrow:', quizArrow);
 }
 
-copleteBtn.addEventListener('click', () => {
-    if (!isApplicationComplete) {
+completeBtn.addEventListener('click', () => {
+
+    if (quizInput.value.length === 18) {
+        
         handleCompleteButtonClick();
-        window.isApplicationComplete = true;
+        closeApplicationQuiz();
     }
+    
 
 });
 

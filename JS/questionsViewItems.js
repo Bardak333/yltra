@@ -1,11 +1,11 @@
-const questions_btn = document.querySelectorAll('.question--btn');
-const questions_answers = document.querySelectorAll('.question--item-2');
-const questions_items = document.querySelectorAll('.questions__container--item');
+const questionsBtn = document.querySelectorAll('.question--btn');
+const questionsAnswers = document.querySelectorAll('.question--item-2');
+const questionsItems = document.querySelectorAll('.questions__container--item');
 
-questions_btn.forEach ((btn, index) => {
+questionsItems.forEach ((btn, index) => {
     btn.addEventListener('click', () => {
-        questions_btn[index].classList.toggle('question--btn_active');
-        questions_answers[index].classList.toggle('question--item-2_visible');
-        questions_items[index].classList.toggle('questions__container--item_active');
+        questionsBtn[index].classList.toggle('question--btn_active');
+        questionsAnswers[index].classList.toggle('question--item-2_visible');
+        questionsItems[index].classList.toggle('questions__container--item_active');
     })
 });

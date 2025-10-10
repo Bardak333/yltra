@@ -290,15 +290,13 @@
         <div class="quiz__application">
             <div class="quiz__application__content">
                 <button class="quiz__application-btn"></button>
-                <p class="quiz__application-head_text">
-                    Спасибо! Мы получили ваши ответы
-                </p>
                 <p class="quiz__application-cuit_text">
                     <span class="quiz__application-cuit_text-bold">Оставьте номер</span> 
                     и мы свяжемся с вами для расчёта стоимости на  
                     <span class="quiz__application-cuit_text-blue">бесплатной</span>
                     <span class="quiz__application-cuit_text-bold">консультации</span>
                 </p>
+                <input type="text" value="" id="map__info--name-input" placeholder="Введите имя">
                 <input type="tel" placeholder="+7 ( ____ ) - ___ - __ - __" id="quiz__application-input" pattern="\+7\s\(\d{3}\)\s-\s\d{3}\s-\s\d{2}\s-\s\d{2}">
                 <div class="quiz__inputFull-icon"></div>
                 <button class="quiz__application-btn_complete">
@@ -310,6 +308,12 @@
         <div class="quiz">
             <div class="container">
                 <div class="quiz__content">
+                    <div class="popup__warning">
+                        <p>
+                            <div class="warning_icon"></div>
+                            Пожалуйста, выберите вариант ответа
+                        </p>
+                    </div>
                     <div class="quiz__widgets">
                         <div class="quiz--widget-1">
                             Узнайте стоимость для вашего случая
@@ -1381,6 +1385,12 @@
                         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af8cde1530c9297d71dd67e9cfcbc588224607584dd1fe4597d3e435c66dfd904&amp;width=720&amp;height=550&amp;lang=ru_RU&amp;scroll=true"></script>
                     </div>
                     <div class="map__application">
+                        <div class="popup__warning-2">
+                            <p>
+                                <div class="warning_icon"></div>
+                                Заполните все поля
+                            </p>
+                        </div>
                         <div class="map__title">
                             <p class="map__title--text-1">Оставить заявку</p>
                             <p class="map__title--text-2">Оставьте свой номер телефона и мы перезвоним Вам в течении 5 минут!</p>
@@ -1425,6 +1435,34 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="complete__application">
+                <div class="quiz__application__content">
+                    <p class="quiz__application-head_text">
+                        Спасибо! <br> Мы получили ваши ответы
+                    </p>
+                    <p class="quiz__application-cuit_text">
+                            Мы получили вашу заявку и позвоним в течении 15 минут, чтобы уточнить детали 
+                        <span class="quiz__application-cuit_text-blue">бесплатной</span>
+                        <span class="quiz__application-cuit_text-bold">консультации</span>
+                    </p>
+                    <div class="complete__application__container">
+                        <p>
+                            Ждём вас на 
+                            <span class="quiz__application-cuit_text-blue">бесплатной диагностике</span>
+                            <br> до конца месяца.
+                        </p>
+                        <p>
+                            Успейте пройти
+                            <br>  
+                            <span class="quiz__application-cuit_text-blue">детальное обследование за 0 ₽</span>
+                        </p>
+                        <p>+ получите фиксированную стоимость</p>
+                    </div>
+                    <button class="complete__application--btn-ok">
+                        Хорошо
+                    </button>
                 </div>
             </div>
         </div>

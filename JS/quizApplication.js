@@ -2,6 +2,7 @@ const quizInput = document.getElementById('quiz__application-input');
 const checkOnIcon = document.querySelector('.quiz__inputFull-icon');
 const completeBtn = document.querySelector('.quiz__application-btn_complete');
 let applicationList = [];
+const okBtn = document.querySelector('.complete__application--btn-ok');
 let quizArrow = {};
 
 function collectAllAnswersToList() {
@@ -43,15 +44,24 @@ function handleCompleteButtonClick() {
 
 completeBtn.addEventListener('click', () => {
 
+    const completeApplicationForm = document.querySelector('.complete__application');
+
     if (quizInput.value.length === 18) {
         
         handleCompleteButtonClick();
         closeApplicationQuiz();
+        completeApplicationForm.classList.toggle('complete__application-active');
     }
-    
-
 });
 
+function closeApplicationForm () {
+
+    const complleteApplicationForm = document.querySelector('.complete__application');
+    complleteApplicationForm.classList.toggle('complete__application-active');
+    body.classList.toggle('scroll-off');
+}
+
+okBtn.addEventListener('click', closeApplicationForm);
 
 quizInput.addEventListener('input', function(e) {
   let value = e.target.value.replace(/\D/g, '');

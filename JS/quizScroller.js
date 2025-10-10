@@ -70,17 +70,19 @@ function scrolltoNextQuestion () {
         else if (questionCount == stepUnderLine.length - 1 && isQuestionSelected()) {
     
             quizApplication.classList.add('quiz__application_active');
-            console.log('Работает форма');
+            body.classList.toggle('scroll-off');
     
         }
     }
 
     else {
 
-        console.log('Пожалуйста, выберите вариант ответа');
-        // Не выбран вариант ответа // подсказка доделать
-    }
-    
+        const warningPopUp = document.querySelector('.popup__warning');
+        warningPopUp.classList.toggle('popup__warning_active');
+        setTimeout(() => {
+            warningPopUp.classList.toggle('popup__warning_active');
+        }, 1500);
+    }   
 }
 
 scrollBtnNext.addEventListener('click', scrolltoNextQuestion);

@@ -8,6 +8,12 @@ const aboutUsBtnMobile = document.getElementById('header_aboutUs_mobile');
 const diplomasBtnMobile = document.getElementById('header_diplomas_mobile');
 const contactsBtnMobile = document.getElementById('header_contacts_mobile');
 
+const mainBtnFooter = document.getElementById('footer_main');
+const aboutUsFooter = document.getElementById('footer_abousUs');
+const diplomasBtnFooter = document.getElementById('footer_diplomas');
+const questionsBtnFooter = document.getElementById('footer_questions');
+const reviewsBtnFooter = document.getElementById('footer_reviews');
+const contactsBtnFooter = document.getElementById('footer_contacts');
 
 function scrollToElement(className, offset = 0) {
 
@@ -42,6 +48,7 @@ contactsBtnDesctop.addEventListener('click', () => {
     scrollToElement('.footer', 0);
 });
 
+
 mainBtnMobile.addEventListener('click', () => {
     scrollToElement('.main', 0);
     open_close__menu();
@@ -61,3 +68,29 @@ contactsBtnMobile.addEventListener('click', () => {
     scrollToElement('.footer', 0);
     open_close__menu();
 });
+
+
+mainBtnFooter.addEventListener('click', () => {
+    scrollToElement('.main', 0);
+})
+
+aboutUsFooter.addEventListener('click', () => {
+    scrollToElement('.aboutUs', 50);
+})
+
+diplomasBtnFooter.addEventListener('click', () => {
+    scrollToElement('.diplomas', 50);
+})
+
+questionsBtnFooter.addEventListener('click', () => {
+    scrollToElement('.questions', 50);
+})
+
+reviewsBtnFooter.addEventListener('click', () => {
+    scrollToElement('.reviews', 50);
+})
+
+contactsBtnFooter.addEventListener('click', () => {
+    scrollToApplication()
+})
+

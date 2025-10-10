@@ -1,12 +1,12 @@
 const diplomasItems = document.querySelectorAll('.diplomas__container--item');
-const diplomas_btn_next = document.querySelector('.diplomas__nav-btn_next');
-const diplomas_btn_back = document.querySelector('.diplomas__nav-btn_back');
+const diplomasBtnNext = document.querySelector('.diplomas__nav-btn_next');
+const diplomasBtnBack = document.querySelector('.diplomas__nav-btn_back');
 let diplomasCount = 0;
 
-function next_diplom() {
+function nextDiplom() {
 
-    const diplomas_container = document.querySelector('.diplomas__container');
-    const containerRect = diplomas_container.getBoundingClientRect();
+    const diplomasContainer = document.querySelector('.diplomas__container');
+    const containerRect = diplomasContainer.getBoundingClientRect();
     
     for (let i = 0; i < diplomasItems.length; i++) {
 
@@ -20,14 +20,14 @@ function next_diplom() {
     }
 }
 
-diplomas_btn_next.addEventListener('click', next_diplom);
+diplomasBtnNext.addEventListener('click', nextDiplom);
 
 //
 
-function back_diplom() {
+function backDiplom() {
 
-    const diplomas_container = document.querySelector('.diplomas__container');
-    const containerRect = diplomas_container.getBoundingClientRect();
+    const diplomasContainer = document.querySelector('.diplomas__container');
+    const containerRect = diplomasContainer.getBoundingClientRect();
     
     for (let i = diplomasItems.length - 1; i >= 0; i--) {
 
@@ -41,7 +41,7 @@ function back_diplom() {
     }
 }
 
-diplomas_btn_back.addEventListener('click', back_diplom);
+diplomasBtnBack.addEventListener('click', backDiplom);
 
 //
 
